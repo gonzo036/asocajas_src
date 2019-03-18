@@ -36,17 +36,7 @@
                 'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                 'walker'            => new wp_bootstrap_navwalker())
             );
-        ?>
-        <?php get_template_part('includes/navbar-search'); ?>
-        <?php
-            wp_nav_menu( array(
-                'theme_location'    => 'navbar-right',
-                'depth'             => 2,
-                'menu_class'        => 'nav navbar-nav navbar-right',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
-        ?>
+        ?>        
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container -->
 </nav>

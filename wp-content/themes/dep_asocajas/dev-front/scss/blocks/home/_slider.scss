@@ -1,0 +1,51 @@
+.slider {
+	position: relative;
+	height: 83vh;
+	width: 100%;
+	&--item {
+		height: 83vh;
+		width: 100%;
+		position: relative;
+		@include bgcover;
+		img {
+			display: none;
+		}
+	}
+	&--caption {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		padding: rem(40px);
+		width: 40%;
+		text-align: center;
+		max-width: rem(550px);
+		@include mq('md') {
+			text-align: left;
+		}
+		p {
+			color: $white;
+			@include font(15px);
+			strong {
+				display: block;
+			}
+			@include mq('md') {
+				@include font(20px);
+			}
+		}
+	}
+
+	// Controls
+	.slick-arrow {
+		width: rem(26px);
+		height: rem(40px);
+		z-index: 2;
+		&.slick-prev {			
+			left: rem(25px);
+			@include iconBg('../images/icons/chevron-left.png', 26px);
+		}
+		&.slick-next {
+			right: rem(25px);
+			@include iconBg('../images/icons/chevron-right.png', 26px);
+		}
+	}
+}

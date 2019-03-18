@@ -1,0 +1,68 @@
+.navbar {
+	
+	position: relative;
+	margin: 0 0 0 0;
+	border: none;
+	background-color: $navy;
+	@include mq('sm') {
+		padding: rem(20px) 0;
+	}
+	// Scrolled menu styles
+	&.scroll_menu {
+	}
+
+	.navbar-header {
+		@include mq('sm') {
+			display: inline-block !important;
+			vertical-align: middle;
+			float: none;
+		}
+		.navbar-brand {
+			@include iconBg('../images/brand/logo_asocajas.png', 186px);
+			width: rem(186px);
+			height: rem(45px);
+		}
+	}
+	.navbar-collapse {
+		@include mq('sm') {
+			display: inline-block !important;
+			vertical-align: middle;
+			float: none;
+			margin-left: rem(93px);
+		}
+		// Menu
+		ul {
+			&.navbar-nav {
+				float: none;
+				clear: both;
+				> li {
+					@include mq('sm') {
+						display: inline-block;
+						vertical-align: middle;
+						float: none;
+					}
+					a {
+						padding-top: 0;
+						padding-bottom: 0;
+						text-transform: uppercase;
+						font-family: $bd;
+						@include font(14px);
+						color: $white;
+						&:hover,
+						&:focus {
+							background-color: transparent;
+							color: $yellow;
+						}
+					}
+					&.active {				
+						a {
+							background-color: transparent;
+							font-family: $bd;
+							color: $yellow;
+						}					
+					}
+				}
+			}
+		}
+	}
+}

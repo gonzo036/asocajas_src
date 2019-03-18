@@ -1,0 +1,18 @@
+body {
+	font-family: $rg;
+	font-size: 16px;
+	margin-top: 0;
+	strong,
+	b {
+		font-family: $bd;
+	}
+
+	// Link styles
+	
+	a {
+		transition: all 0.3s;
+		&:hover {
+			transition: all 0.2s;
+		}
+	}
+}
