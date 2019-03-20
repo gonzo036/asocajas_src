@@ -1,13 +1,13 @@
 <?php
-// 
+//
 
 /*
 	Variables
 	titulo_as
   subtitulo_col1
-  botones_col1
+  botones_col1 (field_repeater)
   subtitulo_col2
-  botones_col2
+  botones_col2 (field_repeater)
 
 */
 
