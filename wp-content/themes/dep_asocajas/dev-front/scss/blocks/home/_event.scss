@@ -1,0 +1,79 @@
+.home-event {
+	position: relative;
+	padding: rem(30px);
+	text-align: center;
+	width: 100%;
+	min-height: rem(520px);
+	@include bgcover;
+	@include mq('md') {
+		text-align: left;
+		padding: rem(100px) 0;
+	}
+
+	&--caption {
+		color: $white;
+		font-family: $bd;
+		position: relative;
+		@include wrapper;
+		span {
+			text-transform: uppercase;
+			@include font(16px);
+			@include mq('md') {
+				@include font(22px);
+			}
+		}
+		h3 {
+			@include font(34px);
+			@include mq('md') {
+				@include font(54px);
+			}	
+		}
+	}
+
+	&--link {
+		@include marineBtn(14px);
+		vertical-align: middle;
+	}
+
+	&--buy {
+		display: inline-block;
+		vertical-align: middle;
+		width: rem(207px);
+		height: rem(46px);
+		@include iconBg('../images/buttons/buy-btn.png', 207px);
+		@include mq('md') {
+			margin-left: 50px;
+		}
+	}
+
+	&--date {
+		position: relative;
+		display: block;
+		text-align: center;
+		
+		@include mq('md') {
+			position: absolute;
+			top: rem(-40px);
+			right: 0;
+			text-align: right;
+		}
+		span {
+			color: $white;
+			display: block;
+			&.date-1 {
+				text-transform: unset;
+				@include font(20px);
+				@include mq('md') {
+					@include font(45px);
+				}
+			}
+			&.date-2 {
+				text-transform: unset;
+				@include font(16px);
+				@include mq('md') {
+					@include font(32px);
+				}
+			}
+		}
+	}
+}
