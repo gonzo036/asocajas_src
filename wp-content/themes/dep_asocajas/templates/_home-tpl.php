@@ -9,6 +9,9 @@
 		/*Slider*/
 		get_template_part('includes/home/slider');
 
+		/*Event*/
+		get_template_part('includes/home/event');
+
 		/*Numbers*/
 		get_template_part('includes/home/numbers');
 

@@ -29,7 +29,7 @@
 				display: block;
 			}
 			@include mq('md') {
-				@include font(20px);
+				@include font(30px);
 			}
 		}
 	}

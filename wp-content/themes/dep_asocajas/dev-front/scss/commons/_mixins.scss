@@ -199,3 +199,20 @@ $browser-context: 16; // Default
   max-width: 1242px;
   margin: 0 auto;
 }
+
+// Buttons
+@mixin marineBtn($size) {
+  display: inline-block;
+  font-family: $bd;
+  font-size: $size;
+  color: $white;
+  background-color: $marine;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 14px 22px;
+  border-radius: 0;
+  cursor: pointer;
+  &:hover {
+    background-color: $black;
+  }
+}
