@@ -15,8 +15,9 @@
 $titulo_principal = get_field('titulo_principal');
 $contenido_col1 = get_field('contenido_col1');
 $iconos_col2 = get_field('iconos_col2');
-$titulo_categorias = get_field('titulo_categorias')
+$titulo_categorias = get_field('titulo_categorias');
 $iconos_categorias = get_field('iconos_categorias');
+
 
 ?>
 
@@ -48,10 +49,10 @@ $iconos_categorias = get_field('iconos_categorias');
       <?php echo $titulo_categorias; ?>
       <div class="block3--categoras">
         <?php
-        if($iconos_col2):
-          while(have_rows('iconos_col2')): the_row();
+        if($iconos_categorias):
+          while(have_rows('iconos_categorias')): the_row();
 
-            $texto_boton = get_sub_field('icono');
+            $icono = get_sub_field('icono');
           ?>
           <div class="block2--col2 img">
             <img src="<?php echo $icono; ?>" alt="">
