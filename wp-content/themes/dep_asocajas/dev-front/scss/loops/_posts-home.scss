@@ -1,0 +1,90 @@
+#HomePost {
+	background-color: $gray-f6;
+	padding: rem(20px);
+	@include mq('md') {
+		padding: rem(32px) 0 rem(52px);
+	}
+	header {
+		h2 {
+			margin-top: 0;
+			color: $gray;
+			text-align: center;
+			text-transform: uppercase;
+			font-family: $bd;
+			@include font(26px);
+			@include mq('md') {
+				@include font(36px);
+			}
+		}
+	}
+}
+
+.home-news {
+	// Slider arrows
+	// Controls
+	.slick-arrow {
+		width: rem(44px);
+		height: rem(44px);
+		z-index: 2;
+		&.slick-prev {			
+			left: rem(10px);
+			@include iconBg('../images/icons/left-arrow.svg', 44px);
+		}
+		&.slick-next {
+			right: rem(10px);
+			@include iconBg('../images/icons/right-arrow.svg', 44px);
+		}
+	}
+
+	&--wrapper {
+		position: relative;
+	}
+
+	&--item {
+		display: block;
+		text-align: center;
+		padding: rem(10px); 
+	}
+
+	&--thumb {
+		display: block;
+		margin: 0;
+		width: 100%;
+		height: rem(260px);
+		position: relative;
+		@include bgcover;
+		a {
+			display: block;
+			@include coverAbsolute(1);
+		}
+	}
+
+	&--caption {
+		background-color: $white;
+		padding: rem(17px);
+		text-align: left;
+		h3 {
+			margin-top: 0;
+			position: relative;
+			a {
+				@include font(20px);
+				color: $gray;
+			}
+		}
+		h4 {
+			@include font(18px);
+			display: inline-block;
+			position: relative;
+			padding-left: rem(32px);
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 0;
+				width: rem(22px);
+				height: rem(22px);
+				@include iconBg('../images/icons/clock.svg', 22px);
+			}
+		}
+	}
+}

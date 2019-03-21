@@ -9,6 +9,9 @@
 		/*Slider*/
 		get_template_part('includes/home/slider');
 
+		/*Noticias*/
+		get_template_part('includes/loops/loop','home-posts');
+
 		/*Event*/
 		get_template_part('includes/home/event');
 

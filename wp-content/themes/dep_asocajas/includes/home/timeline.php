@@ -15,10 +15,9 @@
 
 	<section id="homeTimeline">
 		<header>
-			<h2>Nuestras Cifras</h2>
-			<h3>Información Poblacional del Sistema</h3>
+			<h2>Nuestra historia</h2>
 		</header>
-		<div class="time-wrapper time">
+		<div class="time-wrapper container time">
 			<ul class="time--numbers">
 				<?php 				
 				while(have_rows('linea_tiempo')): the_row();
@@ -28,7 +27,9 @@
 				?>
 				
 					<li class="time--number" data-year="<?php echo $ano; ?>">					
-						<h4><?php echo $ano; ?></h4>		
+						<span class="time--holder">
+							<h4><?php echo $ano; ?></h4>
+						</span>
 					</li>
 
 				<?php endwhile; ?>
@@ -43,7 +44,8 @@
 				?>
 				
 					<div class="time---detail" data-year="<?php echo $ano; ?>">					
-						<h4><?php echo $texto; ?></h4>		
+						<h4><?php echo $ano; ?></h4>
+						<span><?php echo $texto; ?></span>
 					</div>
 
 				<?php endwhile; ?>
