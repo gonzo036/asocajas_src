@@ -21,11 +21,20 @@
 // ------------------------ //
 // -- Blocks -- //
 // ------------------------ //
+@import 'blocks/general/header-titles';
+
 @import 'blocks/home/slider';
 @import 'blocks/home/event';
 @import 'blocks/home/numbers';
 @import 'blocks/home/timeline';
 
+@import 'blocks/gremio/about';
+@import 'blocks/gremio/corporate';
+@import 'blocks/gremio/directives';
+@import 'blocks/gremio/statutes';
+@import 'blocks/gremio/logos';
+
 // ------------------------ //
 // -- Pages -- //
 // ------------------------ //
+@import 'pages/en-caja';
