@@ -15,53 +15,50 @@
 $titulo_principal = get_field('titulo_principal');
 $contenido_col1 = get_field('contenido_col1');
 $iconos_col2 = get_field('iconos_col2');
-$titulo_categorias = get_field('titulo_categorias');
 $iconos_categorias = get_field('iconos_categorias');
 
 
 ?>
 
 <section id="encaja-entucaja" class="container">
-  <div class="block-titulo">
+  <header>
     <?php echo $titulo_principal; ?>
-  </div>
-  <div class="block2">
-    <div class="block2--col1">
-      <?php echo $contenido_col1; ?>
-    </div>
-    <div class="block2-col2">
-      <?php
-      if($iconos_col2):
-        while(have_rows('iconos_col2')): the_row();
-
-          $texto_boton = get_sub_field('icono');
-        ?>
-        <div class="block2--col2 img">
-          <img src="<?php echo $icono; ?>" alt="">
-        </div>
+  </header>
+  <div class="box">
+    <div class="box-wrapf">
+      <div class="box--col1">
+        <?php echo $contenido_col1; ?>
+      </div>
+      <div class="box-col2">
         <?php
-
-    endwhile;
-  endif;
-?>
-    </div>
-    <div class="block3">
-      <?php echo $titulo_categorias; ?>
-      <div class="block3--categoras">
-        <?php
-        if($iconos_categorias):
-          while(have_rows('iconos_categorias')): the_row();
-
+        if($iconos_col2):
+          while(have_rows('iconos_col2')): the_row();
             $icono = get_sub_field('icono');
           ?>
           <div class="block2--col2 img">
             <img src="<?php echo $icono; ?>" alt="">
           </div>
           <?php
+            endwhile;
+          endif;
+        ?>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box--cat">
+        <?php
+        if($iconos_categorias):
+          while(have_rows('iconos_categorias')): the_row();
 
-      endwhile;
-    endif;
-  ?>
+            $icono = get_sub_field('icono');
+          ?>
+          <div class="box--cat--img">
+            <img src="<?php echo $icono; ?>" alt="">
+          </div>
+          <?php
+            endwhile;
+          endif;
+        ?>
       </div>
     </div>
   </div>

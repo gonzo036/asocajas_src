@@ -15,6 +15,9 @@
 	?>
 
 	<section id="Directives">
+		<header>
+			<h2>Directivos</h2>
+		</header>
 		<div class="container directives">					
 			<div class="directives--text">
 				<div class="directives--caption">

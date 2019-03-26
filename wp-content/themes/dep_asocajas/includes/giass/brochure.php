@@ -18,10 +18,12 @@ $url_brochure = get_field('url_brochure');
 
 ?>
 <section id="brochure" class="" style="background-image: url('<?php echo $imagen_brochure; ?>')">
-  <div class="block-brochure">
-    <h2><?php echo $titulo_brochure; ?></h2>
-  </div>
-  <div class="block-brochure btn">
-    <a href="<?php echo $url_brochure; ?>" title="<?php echo $texto_boton; ?>" target="_blank"><?php echo $texto_boton; ?></a>
+  <div class="brochure container">
+    <header>
+      <h2><?php echo $titulo_brochure; ?></h2>
+    </header>
+    <div class="brochure--text">
+      <a href="<?php echo $url_brochure; ?>" title="<?php echo $texto_boton; ?>" target="_blank"><?php echo $texto_boton; ?></a>
+    </div>
   </div>
 </section>

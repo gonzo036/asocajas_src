@@ -18,6 +18,8 @@
 // -- Loops -- //
 // ------------------------ //
 @import 'loops/posts-home';
+@import 'loops/press-loop';
+@import 'loops/research-loop';
 // ------------------------ //
 // -- Blocks -- //
 // ------------------------ //
@@ -33,6 +35,17 @@
 @import 'blocks/gremio/directives';
 @import 'blocks/gremio/statutes';
 @import 'blocks/gremio/logos';
+
+@import 'blocks/research/hero';
+
+@import 'blocks/box/top-content';
+@import 'blocks/box/services';
+@import 'blocks/box/location';
+
+@import 'blocks/giass/top-content';
+@import 'blocks/giass/bottom-content';
+@import 'blocks/giass/brochure';
+
 
 // ------------------------ //
 // -- Pages -- //

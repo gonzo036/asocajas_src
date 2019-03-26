@@ -6,7 +6,9 @@ section {
 			text-transform: uppercase;
 			text-align: center;
 			@include font(26px);
+			padding: rem(20px) 0 0;
 			@include mq('md') {
+				padding: rem(40px) 0 0;
 				@include font(36px);
 			}
 		}
