@@ -188,10 +188,10 @@ $browser-context: 16; // Default
 // Placeholders
 
 @mixin placeholder {
-  ::-webkit-input-placeholder {@content}
-  :-moz-placeholder           {@content}
-  ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
 }
 
 // Layout wrapper
@@ -211,6 +211,7 @@ $browser-context: 16; // Default
   text-align: center;
   padding: 14px 22px;
   border-radius: 0;
+  border: none;
   cursor: pointer;
   &:hover {
     background-color: $black;
