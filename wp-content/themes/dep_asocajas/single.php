@@ -11,9 +11,15 @@
     
     <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
         <?php get_template_part('includes/sidebar'); ?>
-    </div>
-    
+    </div> 
   </div><!-- /.row -->
+  <?php
+    /*Videos*/
+    get_template_part('includes/loops/loop','videos');
+
+    /*Galleries*/
+    get_template_part('includes/loops/loop','galleries');
+  ?>
 </div><!-- /.container -->
 
 <?php get_template_part('includes/footer'); ?>

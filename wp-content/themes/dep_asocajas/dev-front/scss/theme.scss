@@ -20,6 +20,9 @@
 @import 'loops/posts-home';
 @import 'loops/press-loop';
 @import 'loops/research-loop';
+@import 'loops/galleries';
+@import 'loops/videos';
+
 // ------------------------ //
 // -- Blocks -- //
 // ------------------------ //
@@ -39,6 +42,7 @@
 @import 'blocks/gremio/logos';
 
 @import 'blocks/research/hero';
+@import 'blocks/research/files';
 
 @import 'blocks/box/top-content';
 @import 'blocks/box/services';
@@ -54,3 +58,7 @@
 // ------------------------ //
 @import 'pages/en-caja';
 @import 'pages/contact';
+@import 'pages/research';
+
+//singles
+@import 'pages/single-gallery';

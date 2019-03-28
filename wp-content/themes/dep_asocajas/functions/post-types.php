@@ -69,7 +69,7 @@ function create_posttype() {
 	            'singular_name' => __('Item Galería')
 	        ),
 	        'rewrite' => array('slug' => 'item-galeria'),
-	        'supports' => array( 'title', 'thumbnail', 'custom-fields'),
+	        'supports' => array( 'title', 'thumbnail', 'custom-fields', 'revisions'),
 	        'public' => true,
 	        'hierarchical'        => false,
 	        'show_ui'             => true,
@@ -84,6 +84,8 @@ function create_posttype() {
 	        'capability_type'     => 'post'
 	    )
 	);
+
+	//flush_rewrite_rules();
 }
 
 // Hooking up our function to theme setup

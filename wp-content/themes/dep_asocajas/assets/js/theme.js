@@ -80,6 +80,7 @@
 		// Constructor
 		init: function init() {
 			this.menuScripts();
+			this.fancyScripts();
 		},
 
 		// scripts for Menu
@@ -94,6 +95,22 @@
 				} else {
 					header_el.removeClass("scroll_menu");
 				}
+			});
+		},
+
+		fancyScripts: function fancyScripts() {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: false,
+				gutter: 50,
+				keyboard: true,
+				preventCaptionOverlap: true,
+				arrows: true,
+				infobar: true,
+				buttons: ["zoom",
+				//"share",
+				"slideShow",
+				//"fullScreen",
+				"download", "thumbs", "close"]
 			});
 		}
 	};
@@ -195,12 +212,74 @@
 		}
 	};
 
+	// -- Press -- //
+	var $PressScope = {
+
+		// Constructor
+		init: function init() {
+			// Instance functions
+			this.videoSlider();
+			this.gallerySlider();
+		},
+
+		// Scripts Video
+		videoSlider: function videoSlider() {
+			var slider_wrapper = $('.video-news--wrapper');
+			var slick_settings = {
+				dots: false,
+				arrows: true,
+				slidesToShow: 3,
+				infinite: false,
+				slidesToScroll: 3,
+				responsive: [{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
+			};
+
+			if (!slider_wrapper.hasClass('slick-initialized')) {
+				var slick_slider = slider_wrapper.slick(slick_settings);
+			}
+		},
+
+		// Scripts Gallery
+		gallerySlider: function gallerySlider() {
+			var slider_wrapper = $('.gallery-news--wrapper');
+			var slick_settings = {
+				dots: false,
+				arrows: true,
+				slidesToShow: 4,
+				infinite: false,
+				slidesToScroll: 4,
+				responsive: [{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
+			};
+
+			if (!slider_wrapper.hasClass('slick-initialized')) {
+				var slick_slider = slider_wrapper.slick(slick_settings);
+			}
+		}
+	};
+
 	// Trigger
 	$GeneralScope.init();
 
 	// Home Scripts
 	if ($('body').hasClass('home')) {
 		$HomeScope.init();
+	}
+
+	// Home Scripts
+	if ($('body').hasClass('page-template-templates_prensa-tpl-php') || $('body').hasClass('single-post')) {
+		$PressScope.init();
 	}
 })(jQuery);
 

@@ -17,3 +17,37 @@ body {
 		}
 	}
 }
+
+// Social menu
+#menu-menu-redes {
+	li {
+		display: inline-block;
+		vertical-align: top;
+		width: rem(32px);
+		height: rem(32px);
+		margin: 0 rem(5px);
+		a {
+			display: block;
+			width: rem(32px);
+			height: rem(32px);
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+		&.facebook {
+			a {
+				@include iconBg('../images/icons/facebook.svg', 32px);
+			}			
+		}
+		&.twitter {
+			a {
+				@include iconBg('../images/icons/twitter.svg', 32px);
+			}			
+		}
+		&.youtube {
+			a {
+				@include iconBg('../images/icons/youtube.svg', 32px);
+			}			
+		}
+	}
+}

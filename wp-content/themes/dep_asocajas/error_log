@@ -1,2 +1,0 @@
-[26-Mar-2019 10:50:44 UTC] PHP Parse error:  syntax error, unexpected '$pages' (T_VARIABLE) in /home2/depuracr/public_html/asocajas/wp-content/themes/dep_asocajas/functions/setup.php on line 104
-[26-Mar-2019 10:56:49 UTC] PHP Parse error:  syntax error, unexpected '$pages' (T_VARIABLE) in /home2/depuracr/public_html/asocajas/wp-content/themes/dep_asocajas/functions/setup.php on line 105
