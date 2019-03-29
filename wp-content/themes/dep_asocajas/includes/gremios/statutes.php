@@ -27,10 +27,12 @@
 						$texto = get_sub_field('texto');
 						$ulr_link = get_sub_field('ulr_link');
 			?>
-				<div class="statute--item">
-					<img src="<?php echo $icono; ?>" alt="Estatuto Asocajas">
-					<a herf="<?php echo $ulr_link; ?>"><?php echo $texto; ?></a>
-				</div>
+				<?php if($ulr_link): ?>
+					<div class="statute--item">
+							<img src="<?php echo $icono; ?>" alt="Estatuto Asocajas">					
+							<a href="<?php echo $ulr_link; ?>"><?php echo $texto; ?></a>						
+					</div>
+				<?php endif;?>
 			<?php
 					endwhile;
 				endif;

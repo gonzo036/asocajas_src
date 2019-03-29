@@ -13,9 +13,9 @@ $titulo_servicios= get_field('titulo_servicios');
 ?>
 
 <section id="servicios" class="servicios">
-  <div class="servicios-titulo">
+  <header>
     <h2><?php echo $titulo_servicios; ?></h2>
-  </div>
+  </header>
   <div class="servicios-puzzle">
     <?php
     if($banner_servicio):
@@ -25,9 +25,6 @@ $titulo_servicios= get_field('titulo_servicios');
       ?>
       <div class="servicios-puzzle banner">
         <img src="<?php echo $banner_puzzle; ?>" alt="">
-      </div>
-      <div class="servicios-puzzle info">
-        <img src="<?php echo $infografia; ?>" alt="">
       </div>
       <?php
         endwhile;

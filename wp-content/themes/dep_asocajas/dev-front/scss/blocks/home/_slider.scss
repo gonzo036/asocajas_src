@@ -1,25 +1,30 @@
 .slider {
 	position: relative;
-	height: 83vh;
+	//height: 83vh;
 	width: 100%;
 	&--item {
-		height: 83vh;
+		//height: 83vh;
 		width: 100%;
 		position: relative;
 		@include bgcover;
+
 		img {
-			display: none;
+			display: block;
+			width: 100%;
+			height: auto;
 		}
 	}
 	&--caption {
 		position: absolute;
-		bottom: 0;
+		bottom: rem(60px);
 		left: 0;
 		padding: rem(40px);
-		width: 40%;
+		width: 100%;
 		text-align: center;
-		max-width: rem(550px);
+		max-width: rem(950px);
 		@include mq('md') {
+			bottom: unset;
+			top: rem(160px);
 			text-align: left;
 		}
 		p {
@@ -29,7 +34,7 @@
 				display: block;
 			}
 			@include mq('md') {
-				@include font(30px);
+				@include font(60px);
 			}
 		}
 	}

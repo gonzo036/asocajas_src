@@ -27,10 +27,12 @@
 			
 				<div class="slider--item" style="background-image: url('<?php echo $imagen_slider; ?>')">
 					<img src="<?php echo $imagen_slider; ?>">
-					<div class="slider--caption">
-						<?php echo $text_slider; ?>
-						<span class="slider--hightlight"><?php echo $texto_resaltado; ?></span>
-					</div>
+					<?php if($text_slider): ?>
+						<div class="slider--caption">
+							<?php echo $text_slider; ?>
+							<span class="slider--hightlight"><?php echo $texto_resaltado; ?></span>
+						</div>
+					<?php endif; ?>
 				</div>
 
 			<?php endwhile; ?>

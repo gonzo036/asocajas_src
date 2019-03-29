@@ -27,7 +27,7 @@
 	.slick-arrow {
 		width: rem(44px);
 		height: rem(44px);
-		z-index: 2;
+		z-index: 4;
 		&.slick-prev {			
 			left: rem(-10px);
 			@include iconBg('../images/icons/left-arrow.svg', 44px);

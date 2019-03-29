@@ -137,7 +137,8 @@
 				autoplaySpeed: 6000,
 				speed: 300,
 				slidesToShow: 1,
-				slidesToScroll: 1
+				slidesToScroll: 1,
+				adaptiveHeight: true
 			};
 
 			if (!slider_wrapper.hasClass('slick-initialized')) {
@@ -173,6 +174,7 @@
 			var slider_wrapper = $('.time--numbers');
 			var time_items = slider_wrapper.find('.time--number');
 			var time_tab = $('.time---detail');
+			var numbersball = time_items.find('.time--holder');
 
 			var slick_settings = {
 				dots: false,
@@ -198,14 +200,21 @@
 				time_items.each(function (index, el) {
 					var instance = $(this);
 					var yearclick = instance.data('year');
+					var yearcolor = instance.data('color');
+					var numberball = instance.find('.time--holder');
 
 					instance.click(function (event) {
 						/* Act on the event */
 						time_items.removeClass('active');
 						time_tab.css('display', 'none');
+						numbersball.css('background-color', '#f6f6f6');
 
 						instance.addClass('active');
-						$('.time--details').find("[data-year=" + yearclick + "]").css('display', 'block');
+						$('.time--details').find("[data-year=" + yearclick + "]").css({
+							'display': 'block',
+							'background-color': yearcolor
+						});
+						numberball.css('background-color', yearcolor);
 					});
 				});
 			}

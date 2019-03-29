@@ -27,8 +27,13 @@ section {
 			&--caption {
 				text-align: center;
 				color: $white;
+				text-shadow: 0 0 rem(10px) $black;
 				h2 {
 					text-transform: uppercase;
+					@include font(50px);
+				}
+				p {
+					@include font(20px);
 				}
 			}
 		}
