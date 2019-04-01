@@ -85,7 +85,58 @@ function create_posttype() {
 	    )
 	);
 
-	//flush_rewrite_rules();
+	register_post_type( 'recursos',
+	// CPT Options
+	    array(
+	        'labels' => array(
+	            'name' => __( 'Recursos' ),
+	            'singular_name' => __( 'Recurso' )
+	        ),
+	        'rewrite' => array('slug' => 'recursos'),
+	        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'),
+	        'public' => true,
+	        'hierarchical'        => false,
+	        'show_ui'             => true,
+	        'show_in_menu'        => true,
+	        'show_in_nav_menus'   => true,
+	        'show_in_admin_bar'   => true,
+	        'menu_position'       => 8,
+	        'can_export'          => true,
+	        'has_archive'         => true,
+	        'exclude_from_search' => false,
+	        'publicly_queryable'  => true,
+	        'capability_type'     => 'post'
+	    )
+	);
+
+
+	////////////////////
+	// TAXONOMIAS
+	///////////////////
+
+
+	// Tipos de recurso
+
+	$media_labels_ubic = array(
+	    'name' => _x( 'Tipo de recurso', 'Tipos de recurso' ),
+	    'singular_name' => _x( 'Tipo', 'tipo' ),
+	    'search_items' =>  __( 'Buscar Tipo de recurso' ),
+	    'all_items' => __( 'Todas los tipo de recurso' )
+	); 
+
+	register_taxonomy('tipo-recurso',array('recursos'), array(
+	    'hierarchical' => true,
+	    'labels' => $media_labels_ubic,
+	    'show_ui' => true,
+	    'show_admin_column' => true,
+	    'show_in_rest' => true,
+	    'rest_base' => 'recursos',
+	    'rest_controller_class' => 'WP_REST_Terms_Controller',
+	    'query_var' => true,
+	    'rewrite' => array( 'slug' => 'tipo-recurso')
+	)); 
+
+	flush_rewrite_rules();
 }
 
 // Hooking up our function to theme setup

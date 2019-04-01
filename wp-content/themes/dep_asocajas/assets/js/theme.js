@@ -124,6 +124,7 @@
 			this.homeSlider();
 			this.newsSlider();
 			this.timeSlider();
+			this.homeCounter();
 		},
 
 		// scripts for banner
@@ -146,7 +147,7 @@
 			}
 		},
 
-		// scripts for banner
+		// scripts for news
 		newsSlider: function newsSlider() {
 			var slider_wrapper = $('.home-news--wrapper');
 			var slick_settings = {
@@ -169,7 +170,7 @@
 			}
 		},
 
-		// scripts for banner
+		// scripts for history
 		timeSlider: function timeSlider() {
 			var slider_wrapper = $('.time--numbers');
 			var time_items = slider_wrapper.find('.time--number');
@@ -216,6 +217,25 @@
 						});
 						numberball.css('background-color', yearcolor);
 					});
+				});
+			}
+		},
+
+		// scripts for counter
+		homeCounter: function homeCounter() {
+
+			var numberItems = $('.numbers--item');
+
+			$('.counter').counterUp({
+				delay: 10,
+				separator: '.',
+				time: 1500
+			});
+
+			if (numberItems) {
+				numberItems.each(function (index, el) {
+					var instance = $(this);
+					var numberItem = instance.find('h4');
 				});
 			}
 		}

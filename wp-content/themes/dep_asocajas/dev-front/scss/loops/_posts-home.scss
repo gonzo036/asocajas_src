@@ -7,6 +7,7 @@
 	header {
 		h2 {
 			margin-top: 0;
+			padding-top: 0;
 			color: $gray;
 			text-align: center;
 			text-transform: uppercase;
@@ -41,9 +42,18 @@
 	}
 
 	&--item {
+		position: relative;
 		display: block;
 		text-align: center;
-		padding: rem(10px); 
+		margin: rem(10px);
+		background-color: $white;
+		&:hover {
+			.home-news--overlay {
+				transition: all 0.5s;
+				opacity: 1;
+				@include coverAbsolute (2);
+			}
+		}
 	}
 
 	&--thumb {
@@ -59,8 +69,7 @@
 		}
 	}
 
-	&--caption {
-		background-color: $white;
+	&--caption {		
 		padding: rem(17px);
 		text-align: left;
 		h3 {
@@ -84,6 +93,52 @@
 				width: rem(22px);
 				height: rem(22px);
 				@include iconBg('../images/icons/clock.svg', 22px);
+			}
+		}
+	}
+
+	// OVERLAY
+	
+	&--overlay {
+		opacity: 0;
+		padding: 0 rem(20px);
+		position: absolute;
+		@include coverAbsolute (-1);
+		transition: all 0.3;
+		.overlap-bg {
+			@include coverAbsolute (0);
+			opacity: 0.8;
+			background-color: $purple;
+		}
+
+		.over-text {
+			@include coverAbsolute (3);
+			display: table;
+			text-align: center;
+			padding: 0 rem(40px);
+			@include mq('md') {
+				padding: 0 rem(65px);
+			}
+			&--center {
+				text-align: center;
+				display: table-cell;
+				vertical-align: middle;
+				color: $white;
+				a {
+					color: $white;
+					&.more-link {
+						font-family: $bd;
+						text-transform: uppercase;
+					}
+				}
+
+				.more-icon {					
+					width: rem(35px);
+					height: rem(35px);
+					margin: rem(20px) auto 0;
+					@include iconBg('../images/icons/round-add-button.svg', 35px);
+					display: block;
+				}
 			}
 		}
 	}

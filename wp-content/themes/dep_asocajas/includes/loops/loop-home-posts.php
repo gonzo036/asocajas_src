@@ -18,8 +18,32 @@
 				$args = array( 'post_type' => 'post', 'posts_per_page' => 10 );
 				$query = new WP_Query( $args );
 				while ( $query->have_posts() ) : $query->the_post();
+
+					$def = '#d84e65';
+					$color = get_field('color_item');
+					$hover;
+
+					if ($color) {
+						$hover = get_field('color_item');
+					} else {
+						$hover = $def;
+					}
+
+
 			?>
 				<article class="home-news--item">
+					<div class="home-news--overlay">
+						<span class="overlap-bg" style="background-color: <?php echo $hover; ?>"></span>
+						<div class="over-text">
+							<span class="over-text--center">
+								<?php the_excerpt(); ?>
+								<a href="<?php the_permalink(); ?>" class="more-link">
+									Leer Más
+									<span class="more-icon"></span>
+								</a>
+							</span>
+						</div>
+					</div>
 					<figure class="home-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>')">
 						<a href="<?php the_permalink(); ?>"></a>
 					</figure>

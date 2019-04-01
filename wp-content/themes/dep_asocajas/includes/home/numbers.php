@@ -32,7 +32,7 @@
 				<div class="numbers--item">
 					<img src="<?php echo $icono_cifra; ?>">
 					<div class="numbers--caption">
-						<h4><?php echo $numero_cifra; ?></h4>
+						<h4 class="counter"><?php echo $numero_cifra; ?></h4>
 						<p><?php echo $texto_cifra; ?></p>
 					</div>
 				</div>

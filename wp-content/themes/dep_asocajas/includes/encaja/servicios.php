@@ -24,7 +24,9 @@ $titulo_servicios= get_field('titulo_servicios');
         $infografia= get_sub_field('infografia');
       ?>
       <div class="servicios-puzzle banner">
-        <img src="<?php echo $banner_puzzle; ?>" alt="">
+        <a data-fancybox href="<?php echo $infografia; ?>">
+          <img src="<?php echo $banner_puzzle; ?>" alt="">
+        </a>
       </div>
       <?php
         endwhile;

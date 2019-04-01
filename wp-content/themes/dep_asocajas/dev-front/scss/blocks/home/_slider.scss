@@ -24,6 +24,7 @@
 		max-width: rem(950px);
 		@include mq('md') {
 			bottom: unset;
+			left: rem(60px);
 			top: rem(160px);
 			text-align: left;
 		}
@@ -34,7 +35,8 @@
 				display: block;
 			}
 			@include mq('md') {
-				@include font(60px);
+				@include font(50px);
+				line-height: 1;
 			}
 		}
 	}
