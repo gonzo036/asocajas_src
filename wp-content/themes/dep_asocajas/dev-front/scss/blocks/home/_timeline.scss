@@ -39,11 +39,11 @@
 	}
 
 	&--numbers {
-		padding: rem(50px) 0;
+		padding: rem(50px) 0 0;
+		margin: 0 0 0 0;
 		display: block;
 		text-align: center;
-		position: relative;
-		
+		position: relative;		
 		.slick-list {
 			position: relative;
 			z-index: 2;
@@ -63,18 +63,35 @@
 	}
 
 	&--number {
-		height: rem(90px);
+		height: rem(120px);
 		display: block;
 		position: relative;
 		z-index: 1;
+		.arrow-up {			
+			@include arrow('top', $purple, 30px);
+			display: none;
+			position: absolute;
+			bottom: rem(-10px);
+			left: 50%;
+			transform: translateX(-50%);
+			padding: 0;			
+		}
+
 		&.active {
 			color: $white;
 			transition: all 0.3s;
 			span {
-				background-color: $purple;
-				color: $white;
+				&.time--holder {
+					background-color: $purple;
+					color: $white;
+				}
+
 				h4 {
 					color: $white;
+				}
+
+				&.arrow-up {
+					display: block;
 				}
 			}
 		}
@@ -108,6 +125,8 @@
 		color: $white;
 		padding: rem(15px);
 		text-align: center;
+		position: relative;
+
 		@include mq('md') {
 			padding: rem(30px);
 		}

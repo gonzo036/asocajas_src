@@ -1,5 +1,4 @@
 .navbar {
-	
 	position: relative;
 	margin: 0 0 0 0;
 	border: none;
@@ -37,9 +36,9 @@
 			float: none;
 		}
 		.navbar-brand {
-			@include iconBg('../images/brand/logo_asocajas.png', 186px);
+			@include iconBg('../images/brand/logo.svg', 186px);
 			width: rem(186px);
-			height: rem(45px);
+			height: rem(50px);
 		}
 	}
 	.navbar-collapse {

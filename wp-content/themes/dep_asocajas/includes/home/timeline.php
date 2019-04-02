@@ -31,6 +31,8 @@
 						<span class="time--holder">
 							<h4><?php echo $ano; ?></h4>
 						</span>
+
+						<span class="arrow-up arrow-<?php echo $index; ?>" style="border-bottom: 30px solid <?php echo $color; ?>"></span>
 					</li>
 
 				<?php endwhile; ?>
@@ -38,18 +40,21 @@
 			<div class="time--details">
 				<?php 
 				
+				$index = 1;
+
 				while(have_rows('linea_tiempo')): the_row();
 
 					$ano = get_sub_field('ano');
 					$texto = get_sub_field('texto');
+					$color = get_sub_field('color_fondo');
 				?>
 				
-					<div class="time---detail" data-year="<?php echo $ano; ?>" data-color="<?php echo $color ?>">					
+					<div class="time---detail" data-year="<?php echo $ano; ?>" data-color="<?php echo $color; ?>">	
 						<h4><?php echo $ano; ?></h4>
 						<span><?php echo $texto; ?></span>
 					</div>
 
-				<?php endwhile; ?>
+				<?php $index++; endwhile; ?>
 			</div>
 		</div>
 	</section>
