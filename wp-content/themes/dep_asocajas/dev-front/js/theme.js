@@ -6,6 +6,7 @@
 		init: function() {
 			this.menuScripts();
 			this.fancyScripts();
+			this.mapScripts();
 		},
 
 		// scripts for Menu
@@ -21,6 +22,19 @@
 					header_el.removeClass("scroll_menu");
 				}
 			});
+		},
+
+		mapScripts: function() {
+			let map = L.map('mapid', {
+					center: [4.632,-74.299],
+					zoom: 6
+				});
+
+			let gl = L.mapboxGL({
+				attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">© MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">© OpenStreetMap contributors</a>',
+				accessToken: 'no-token',
+				style: 'https://api.maptiler.com/maps/070eadaf-a6cd-45ba-b39b-d2c301279159/style.json?key=4ByPNrAy6wHbEZdnwieo'
+			}).addTo(map);
 		},
 
 		fancyScripts: function(){

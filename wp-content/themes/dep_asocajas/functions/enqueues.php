@@ -37,11 +37,17 @@ function bst_enqueues() {
 	wp_register_script('waypoints-js', get_template_directory_uri() . '/js/waypoints.js', false, null, true);
 	wp_enqueue_script('waypoints-js');
 
+	wp_register_script('leaflet-js', get_template_directory_uri() . '/js/leaflet.js', false, null, true);
+	wp_enqueue_script('leaflet-js');
+
 	wp_register_script('counterup-js', get_template_directory_uri() . '/js/counterup.js', false, null, true);
 	wp_enqueue_script('counterup-js');
 
 	wp_register_script('slick-js', get_template_directory_uri() . '/assets/js/vendors/slick/slick.js', false, null, true);
 	wp_enqueue_script('slick-js');
+
+	wp_register_script('mapbox-js', get_template_directory_uri() . '/js/mapbox.js', false, null, true);
+	wp_enqueue_script('mapbox-js');
 
 	wp_register_script('main-js', get_template_directory_uri() . '/assets/js/theme.js', false, null, true);
 	wp_enqueue_script('main-js');
