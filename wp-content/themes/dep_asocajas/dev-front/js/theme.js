@@ -255,6 +255,44 @@
 				accessToken: 'no-token',
 				style: 'https://api.maptiler.com/maps/070eadaf-a6cd-45ba-b39b-d2c301279159/style.json?key=4ByPNrAy6wHbEZdnwieo'
 			}).addTo(map);
+
+			// Set sidebar
+			let sidebar = L.control.sidebar('sidebar', {
+				closeButton: true,
+				position: 'left'
+			});
+
+			map.addControl(sidebar);
+
+			// Set markers
+			let MarkerPointer = $('#mapMarkers li');
+
+			if(MarkerPointer) {
+				MarkerPointer.each(function(index, el) {
+					let instance = $(this);
+					// Mav item vars
+					let latLen = instance.data('lat-len');
+					let itemTitle = instance.data('name');
+					let itemBody = instance.html();
+
+					let latSplited = latLen.split(",");
+					let Lat = parseFloat(latSplited[0]);
+					let Len = parseFloat(latSplited[1]);
+					let div_circle = L.divIcon({ className: 'circle'})
+
+					console.log('latLen', Lat,Len );
+
+					let markerItem = L.marker([Lat,Len],{icon: div_circle}).addTo(map).on('click', function () {
+						$('#sidebar').html('');
+						sidebar.toggle();
+						$('#sidebar').html('<h2>'+itemTitle+'</h2>'+ itemBody );
+					});
+				});
+			}
+
+			map.on('click', function () {
+				sidebar.hide();
+			})
 		},
 	}
 

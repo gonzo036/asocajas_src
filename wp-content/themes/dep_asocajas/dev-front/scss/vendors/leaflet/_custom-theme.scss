@@ -4,3 +4,12 @@
 		min-height: 80vh;
 	}
 }
+
+#mapMarkers {
+	display: none;
+}
+
+.circle {
+	background-color: $white;
+	border-radius: 50%;
+}
