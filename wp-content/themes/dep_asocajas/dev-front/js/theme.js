@@ -296,6 +296,32 @@
 		},
 	}
 
+	// -- Events -- //
+	const $eventScope = {
+		// Constructor
+		init: function() {
+			this.popScripts();
+		},
+
+		popScripts: function() {
+			let popItems = $('.event-ponents-item');
+
+			if(popItems) {
+				popItems.each(function(index, el) {
+					let instance = $(this);
+					let imageWrapper = instance.find('img');
+					let captionPop = instance.find('.event-ponents-item-caption');
+
+
+					instance.click(function(event) {
+						/* Act on the event */
+						$.fancybox.open('<div class="modalmessage"><figure><img src="'+imageWrapper.attr('src')+'"></figure><div class="caption">'+ captionPop.html() +'</div></div>');
+					});
+				});
+			}
+		}
+	}
+
 	// Trigger 
 	$GeneralScope.init();
 
@@ -312,6 +338,11 @@
 	// Map Scripts
 	if($('body').hasClass('page-template-_map-tpl')  ) {
 		$MapScope.init();
+	}
+
+	// Event Single
+	if($('body').hasClass('single-eventos')  ) {
+		$eventScope.init();
 	}
 
 })(jQuery);

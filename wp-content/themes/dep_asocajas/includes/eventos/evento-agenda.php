@@ -29,7 +29,7 @@
 				<div class="event-agenda-item-body">
 					<?php if ($items_agenda): ?>
 						<table class="event-agenda-item-body-table">
-							<?php while(have_rows('sesiones_agenda')): the_row(); 
+							<?php while(have_rows('items_agenda')): the_row(); 
 								$horas = get_sub_field('horas');
 								$nombre_ponente = get_sub_field('nombre_ponente');
 								$cargo_ponente = get_sub_field('cargo_ponente');

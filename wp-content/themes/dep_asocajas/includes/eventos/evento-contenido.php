@@ -6,30 +6,31 @@
 	$price = get_field('precio');
 ?>
 <section id="EventInfo" class="event-info">
-	<div class="wrapper event-wrapper">
+	<div class="container event-wrapper">
 		<div class="event-info-text">
 			<?php the_content(); ?>
 		</div>
 		<div class="event-info-details">
-			<ul>
+			<h3>DETALLES</h3>
+			<table>
 				<?php if($hour): ?>
-					<li><strong>Hora:</strong><span><?php echo $hour; ?></span></li>
+					<tr><td><strong>Hora:</strong></td><td><?php echo $hour; ?></td></tr>
 				<?php endif; ?>
 				<?php if($date): ?>
-					<li><strong>Fecha:</strong><span><?php echo $date; ?></span></li>
+					<tr><td><strong>Fecha:</strong></td><td><?php echo $date; ?></td></tr>
 				<?php endif; ?>
 				<?php if($city): ?>
-					<li><strong>Ciudad:</strong><span><?php echo $city; ?></span></li>
+					<tr><td><strong>Ciudad:</strong></td><td><?php echo $city; ?></td></tr>
 				<?php endif; ?>
 				<?php if($place): ?>
-					<li><strong>Lugar:</strong><span><?php echo $place; ?></span></li>
+					<tr><td><strong>Lugar:</strong></td><td><?php echo $place; ?></td></tr>
 				<?php endif; ?>
 				<?php if($price): ?>
-					<li><strong>Precio:</strong><span><?php echo $price; ?></span></li>
+					<tr><td><strong>Precio:</strong></td><td><?php echo $price; ?></td></tr>
 				<?php endif; ?>
-			</ul>
+			</table>
 			<div class="cta-actions">
-				<a href="">Comprar Tiquete</a>
+				<a href="https://www.asistiendo.com/prod/0020101/0215W4R3O6/adm/login.asp?id=000001A0K2Q0X5E4S5D4G1U8J8E8F6W4R3O6" target="_blank">Comprar Entradas</a>
 			</div>
 		</div>
 	</div>

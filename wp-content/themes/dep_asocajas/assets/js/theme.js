@@ -357,6 +357,31 @@
 		}
 	};
 
+	// -- Events -- //
+	var $eventScope = {
+		// Constructor
+		init: function init() {
+			this.popScripts();
+		},
+
+		popScripts: function popScripts() {
+			var popItems = $('.event-ponents-item');
+
+			if (popItems) {
+				popItems.each(function (index, el) {
+					var instance = $(this);
+					var imageWrapper = instance.find('img');
+					var captionPop = instance.find('.event-ponents-item-caption');
+
+					instance.click(function (event) {
+						/* Act on the event */
+						$.fancybox.open('<div class="modalmessage"><figure><img src="' + imageWrapper.attr('src') + '"></figure><div class="caption">' + captionPop.html() + '</div></div>');
+					});
+				});
+			}
+		}
+	};
+
 	// Trigger
 	$GeneralScope.init();
 
@@ -373,6 +398,11 @@
 	// Map Scripts
 	if ($('body').hasClass('page-template-_map-tpl')) {
 		$MapScope.init();
+	}
+
+	// Event Single
+	if ($('body').hasClass('single-eventos')) {
+		$eventScope.init();
 	}
 })(jQuery);
 

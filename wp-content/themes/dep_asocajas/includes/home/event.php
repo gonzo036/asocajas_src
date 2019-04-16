@@ -23,7 +23,9 @@
 	?>
 
 	<section id="homeEvent" class="home-event" style="background-image: url('<?php echo $fondo_evento; ?>')">
-		<img src="<?php echo $fondo_evento; ?>" alt="<?php echo $texto_evento; ?>">
+		<a href="<?php echo $vinculo_evento; ?>">
+			<img src="<?php echo $fondo_evento; ?>" alt="<?php echo $texto_evento; ?>">
+		</a>
 		<?php if($texto_evento): ?>
 			<div class="home-event--caption">
 				<div class="home-event--date">

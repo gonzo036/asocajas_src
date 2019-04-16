@@ -13,6 +13,9 @@
 
 <?php if($ponentes): ?>
 <section id="eventExponents">
+	<header>
+		<h2>CONFERENCISTAS</h2>
+	</header>
 	<div class="event-ponents container">
 		<?php while(have_rows('ponentes')): the_row(); 
 			$imagen_ponente = get_sub_field('imagen_ponente');
