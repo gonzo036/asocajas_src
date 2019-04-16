@@ -109,6 +109,58 @@ function create_posttype() {
 	    )
 	);
 
+	//Post Type Eventos
+
+	register_post_type( 'eventos',
+	// CPT Options
+	    array(
+	        'labels' => array(
+	            'name' => __( 'Eventos' ),
+	            'singular_name' => __( 'Evento' )
+	        ),
+	        'rewrite' => array('slug' => 'evento'),
+	        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'),
+	        'public' => true,
+	        'hierarchical'        => false,
+	        'show_ui'             => true,
+	        'show_in_menu'        => true,
+	        'show_in_nav_menus'   => true,
+	        'show_in_admin_bar'   => true,
+	        'menu_position'       => 9,
+	        'can_export'          => true,
+	        'has_archive'         => true,
+	        'exclude_from_search' => false,
+	        'publicly_queryable'  => true,
+	        'capability_type'     => 'post'
+	    )
+	);
+
+	//Post Type Eventos
+
+	register_post_type( 'revistas',
+	// CPT Options
+	    array(
+	        'labels' => array(
+	            'name' => __( 'Revistas' ),
+	            'singular_name' => __( 'Revista' )
+	        ),
+	        'rewrite' => array('slug' => 'revista'),
+	        'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields'),
+	        'public' => true,
+	        'hierarchical'        => false,
+	        'show_ui'             => true,
+	        'show_in_menu'        => true,
+	        'show_in_nav_menus'   => true,
+	        'show_in_admin_bar'   => true,
+	        'menu_position'       => 10,
+	        'can_export'          => true,
+	        'has_archive'         => true,
+	        'exclude_from_search' => false,
+	        'publicly_queryable'  => true,
+	        'capability_type'     => 'post'
+	    )
+	);
+
 
 	////////////////////
 	// TAXONOMIAS

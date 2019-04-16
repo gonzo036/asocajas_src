@@ -17,7 +17,18 @@ body {
 		}
 	}
 }
-
+.visible-desktop {
+	display: none !important; 
+	@include mq('sm') {
+		display: block !important;
+	}
+}
+.visible-mobile {
+	display: block !important; 
+	@include mq('sm') {
+		display: none !important;
+	}
+}
 // Social menu
 #menu-menu-redes,
 #menu-menu-redes-1 {

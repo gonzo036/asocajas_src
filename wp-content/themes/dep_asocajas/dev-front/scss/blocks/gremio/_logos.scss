@@ -11,9 +11,15 @@
 		padding: 0;
 		text-align: center;
 		li {
-			display: inline-block;
+			display: block;
 			vertical-align: top;
-			margin: rem(10px);
+			margin: rem(10px) auto;
+			@include mq('md') {
+				display: inline-block;
+				vertical-align: top;
+				margin: rem(10px);
+				width: 15%;
+			}
 			img {
 				max-width: 100%;
 			}

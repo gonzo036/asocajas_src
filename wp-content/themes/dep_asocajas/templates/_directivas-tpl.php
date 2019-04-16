@@ -5,6 +5,5 @@
 */
 
 	get_template_part('includes/header');
-
-    get_template_part('includes/directivas/mesa')
+    get_template_part('includes/loops/content','directives');
 	get_template_part('includes/footer');
