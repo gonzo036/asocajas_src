@@ -44,7 +44,7 @@
 							</span>
 						</div>
 					</div>
-					<figure class="home-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>')">
+					<figure class="home-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('medium'); ?>')">
 						<a href="<?php the_permalink(); ?>"></a>
 					</figure>
 					<div class="home-news--caption">

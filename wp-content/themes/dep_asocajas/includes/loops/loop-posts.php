@@ -34,7 +34,7 @@
 							</span>
 						</div>
 					</div>
-					<figure class="pod-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('full'); ?>')">
+					<figure class="pod-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('medium'); ?>')">
 						<a href="<?php the_permalink(); ?>"></a>
 					</figure>
 					<div class="pod-news--caption">
