@@ -27,12 +27,12 @@ Presidente Ejecutiva, Asocajas
         <div class="detalles" style="background-color:#f6f6f6; padding:20px;">
           <h2 class="text-center">DETALLES</h2>
           <p style="padding:10px"> <b style="margin-right:10px;">Hora:</b>7:30 </p>
-            <p style="padding:10px"> <b>Fecha:</b>29 de mayo </p>
-              <p style="padding:10px"> <b>Hora:</b>Club El Nogal - Gran salón</p>
-                <p style="padding:10px"> <b>Precio:</b>$500.000 + iva</p>
+            <p style="padding:10px"> <b style="margin-right:10px;">Fecha:</b>29 de mayo </p>
+              <p style="padding:10px"> <b style="margin-right:10px;">Hora:</b>Club El Nogal - Gran salón</p>
+                <p style="padding:10px"> <b style="margin-right:10px;">Precio:</b>$500.000 + iva</p>
         </div>
         <div style="background-color:#00c6f4;">
-          <a class="text-center" href="#"> <img src="http://www.asocajas.org.co/wp-content/uploads/2019/04/icono-carro.png" alt=""> <p>COMPRAR ENTRADAS</p> </a>
+          <a class="text-center" href="#"> <img src="http://www.asocajas.org.co/wp-content/uploads/2019/04/icono-carro.png" alt="">COMPRAR ENTRADAS</a>
 
         </div>
       </div>
@@ -238,14 +238,249 @@ Presidente Ejecutiva, Asocajas
 <div class="container">
   <div class="row">
     <div class="col-md-4">
-    <p>  7:30 a.m.</p>
+    <b>  7:30 a.m.</b>
     </div>
     <div class="col-md-8">
-      <p>registro de participantes</p>
+      <b>registro de participantes</b>
       <h3 class="text-center">SESIÓN DE INSTALACION</h3>
-      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:40%; "  />
+      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:50%; "  />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>  8:30 a.m.  8:45a.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Adriana María Guillén Arango</b><br> <i>Presidente Ejecutiva, Asociación Nacional de Cajas de Compensación Familiar, Asocajas</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>8:45  9:00a.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Alicia Arango Olmos</b> <i>Ministra del Trabajo</i>
+      <h3 class="text-center">PRIMERA SESIÓN</h3>
+      <h4 class="text-center">PROTECCIÓN Y SEGURIDAD SOCIAL INTEGRAL</h4>
+      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:50%; "  />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>  9:00 a.m.  10:00a.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Rafael de la Cruz</b><br> <i>Gerente General, Departamento de Países del Grupo Andino y Representante del Banco Interamericano de Desarrollo, BID, en Colombia</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>  10:00 a.m.  10:30a.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Coffee Break</b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>  10:30 a.m.  12:00p.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Conversatorio</b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Alicia Arango Olmos</b>  <i>Ministra del Trabajo </i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Juan Pablo Uribe Restrepo </b>  <i>Ministro de Salud y Protección Social </i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Alberto Carrasquilla Barrera</b>  <i>Ministro de Hacienda y Crédito Público</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Bruce Mac Master Rojas</b>  <i>	Presidente, Asociación Nacional de Empresarios de Colombia, ANDI</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Oscar Cabrera Izquierdo</b>  <i>Presidente Ejecutivo, BBVA Colombia</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>	Moderador:<br>Juan Lozano Ramírez </b>  <i>Abogado y Periodista</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> </b>
+    </div>
+    <div class="col-md-8">
+      <b>Sesión de preguntas</b>  <i>Redes técnicas de las Cajas de Compensación: salud, empleo, cultura, recreación y </i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>  12:00 a.m.  2:00p.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Almuerzo, Salón Buenos Aires, Club El Nogal</b>
+      <h3 class="text-center">SEGUNDA SESIÓN </h3>
+      <h4 class="text-center">PROTECCIÓN SOCIAL, FORMACIÓN Y PRODUCTIVIDAD</h4>
+      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:50%; "  />
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> 2:00p.m.  3:00p.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>José Antonio Ocampo Gaviria</b>  <i>Codirector Banco de la República
+		ExMinistro de Agricultura, Hacienda y Director de Planeación Nacional
+</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b> 3:00p.m.  5:00p.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Conversatorio </b>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>José Manuel Restrepo Abondano</b> <i>Ministro de Comercio, Industria y Turismo</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Angel Melguizo</b> <i>Vicepresidente, Asuntos Externos y Regulatorios, Directv Latin America - AT&T
+Experto en mercados laborales y seguridad social
+</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Eduardo Pizano de Narváez</b> <i>Escuela de Gobierno, Universidad de los Andes</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>José Alejandro Cheyne García</b> <i>Rector del Colegio Mayor de Nuestra Señora del Rosario</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Andrés Uribe Medina</b> <i>Viceministro, Empleo y Pensiones, Ministerio del Trabajo</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Carlos Angulo Galvis</b> <i>Presidente, Fundación Corona</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Moderador:<br>Juan Lozano Ramírez </b> <i>Abogado y Periodista</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Sesión de preguntas</b> <i>Redes técnicas de las Cajas de Compensación: educación, empleo, emprendimiento </i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b></b>
+      <h3 class="text-center">SESIÓN DE CLAUSURA</h3>
+      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:50%; "  />
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b>5:00p.m.  6:00p.m.</b>
+    </div>
+    <div class="col-md-8">
+      <b>Iván Duque Márquez</b> <i>Presidente de la República de Colombia</i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b>Lanzamiento </b> <i>Premio Fabio Echeverri Correa al sector empresarial </i>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+    <b></b>
+    </div>
+    <div class="col-md-8">
+      <b></b>
+      <h3 class="text-center">6:00P.M</h3>
+      <h4 class="text-center">COCTEL 50 AÑOS ASOCAJAS</h4>
+      <hr style="background-image:linear-gradient(to right, rgb(55, 152, 214) , rgba(64, 172, 99, 0.6)); height:3px; width:50%; "  />
+
     </div>
   </div>
 
 </div>
+<a href="#"></a>
 </section>

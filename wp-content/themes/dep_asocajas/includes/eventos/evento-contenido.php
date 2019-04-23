@@ -30,7 +30,7 @@
 				<?php endif; ?>
 			</table>
 			<div class="cta-actions">
-				<a href="https://www.asistiendo.com/prod/0020101/0215W4R3O6/adm/login.asp?id=000001A0K2Q0X5E4S5D4G1U8J8E8F6W4R3O6" target="_blank">Comprar Entradas</a>
+				<a href="https://www.asistiendo.com/prod/0020101/0215W4R3O6/adm/login.asp?id=000001A0K2Q0X5E4S5D4G1U8J8E8F6W4R3O6" target="_blank">Inscripciones</a>
 			</div>
 		</div>
 	</div>
