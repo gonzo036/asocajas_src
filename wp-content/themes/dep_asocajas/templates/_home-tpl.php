@@ -15,6 +15,9 @@
 		/*Event*/
 		get_template_part('includes/home/event');
 
+		/*revistas*/
+		get_template_part('includes/home/revista');
+
 		/*Numbers*/
 		get_template_part('includes/home/numbers');
 
