@@ -12,10 +12,11 @@
 		cursor: pointer;
 		@include mq('md') {
 			width: 20%;
-			margin: rem(10px) rem(22px);	
+			margin: rem(10px) rem(22px);
 		}
 
 		img {
+			border-radius: 50%;
 			display: block;
 			margin: 0 auto rem(15px);
 		}
@@ -36,6 +37,7 @@
 	figure {
 		padding: rem(10px);
 		img {
+			border-radius: 50%;
 			display: inline-block;
 		}
 	}
