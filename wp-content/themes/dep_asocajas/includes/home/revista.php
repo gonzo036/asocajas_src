@@ -23,7 +23,6 @@ url_destino
 		<a href="<?php echo $url_destino; ?>">
 			<img src="<?php echo $imagen_banner; ?>" alt="">
 		</a>
-
 	</section>
 
 	<?php

@@ -1,12 +1,12 @@
-<section id="MainPost">
-	<div class="container pod-news">
+<section id="MainMagazines">
+	<div class="container pod-magazines">
 		<header>
-			<h2>Noticias</h2>
+			<h2>Revistas</h2>
 		</header>
-		<div id="postsWrapper" class="pod-news--wrapper">
+		<div id="postsWrapper" class="pod-magazines--wrapper">
 			<?php 
 				$paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-				$args = array( 'post_type' => 'post', 'posts_per_page' => 9, 'paged' => $paged);
+				$args = array( 'post_type' => 'revistas', 'posts_per_page' => 12, 'paged' => $paged);
 				$query = new WP_Query( $args );
 				while ( $query->have_posts() ) : $query->the_post();
 
@@ -21,31 +21,17 @@
 					}
 					
 			?>
-				<article class="pod-news--item">
-					<div class="pod-news--overlay">
-						<span class="overlap-bg" style="background-color: <?php echo $hover; ?>"></span>
-						<div class="over-text">
-							<span class="over-text--center">
-								<?php the_excerpt(); ?>
-								<a href="<?php the_permalink(); ?>" class="more-link">
-									Leer Más
-									<span class="more-icon"></span>
-								</a>
-							</span>
-						</div>
-					</div>
-					<figure class="pod-news--thumb" style="background-image:url('<?php the_post_thumbnail_url('medium'); ?>')">
+				<article class="pod-magazines--item">
+					<figure class="pod-magazines--thumb" style="background-image:url('<?php the_post_thumbnail_url('medium'); ?>')">
 						<a href="<?php the_permalink(); ?>"></a>
 					</figure>
-					<div class="pod-news--caption">
+					<div class="pod-magazines--caption">
 						<h3>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
 							</a>				
 						</h3>
-						<h4>
-							<?php the_time('F j, Y'); ?>
-						</h4>
+						<?php the_excerpt(); ?>
 					</div>
 				</article>
 			<?php
