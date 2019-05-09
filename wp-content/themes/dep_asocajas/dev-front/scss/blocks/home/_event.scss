@@ -33,13 +33,16 @@
 			@include font(34px);
 			@include mq('md') {
 				@include font(54px);
-			}	
+			}
 		}
 	}
 
 	&--link {
 		@include marineBtn(14px);
 		vertical-align: middle;
+		position: absolute;
+		top: -100px;
+		left: 50px;
 	}
 
 	&--buy {
@@ -50,6 +53,9 @@
 		@include iconBg('../images/buttons/buy-btn.png', 207px);
 		@include mq('md') {
 			margin-left: 50px;
+			position: absolute;
+			top:-100px;
+			left: 250px
 		}
 	}
 
@@ -57,7 +63,7 @@
 		position: relative;
 		display: block;
 		text-align: center;
-		
+
 		@include mq('md') {
 			position: absolute;
 			top: rem(-40px);
