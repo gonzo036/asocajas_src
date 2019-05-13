@@ -64,16 +64,23 @@
 
 				if(!empty($month) && !empty($year)) {
 
-					$start_date = date($year.$month.'01'); // First day of the month
-					$end_date = date($year.$month.'t'); // 't' gets the last day of the month
+					//$args = array( 
+					//	'post_type' => 'post', 
+					//	'posts_per_page' => 9,
+					//	'date_query' => array(
+					//	array(
+					//			'year' => date($year),
+					//			'month' => date($month)
+					//		)
+					//	),
+					//);
 
-					$args = array( 
-						'post_type' => 'post', 
-						'posts_per_page' => 9,
+					$args = array ( 
+						'post_type' => 'post',
 						'date_query' => array(
-						array(
-								'year' => date($year),
-								'month' => date($month)
+						array (
+								'year' => intval($year),
+								'month' => intval($month)
 							)
 						),
 					);
