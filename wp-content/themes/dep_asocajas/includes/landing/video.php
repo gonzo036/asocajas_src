@@ -9,8 +9,8 @@
 
 	?>
   <section id="video">
-    <div class="container video">
-      <video autoplay loop id="video-background" muted plays-inline controls>
+    <div class="container-fluid video text-center">
+      <video autoplay loop id="video-background" class="vdo-lnd" muted plays-inline controls>
               <source src="<?php echo $video; ?>" type="video/mp4">
       </video>
     </div>

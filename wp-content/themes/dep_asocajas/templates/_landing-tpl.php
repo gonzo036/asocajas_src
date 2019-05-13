@@ -3,7 +3,7 @@
 /*
   Template Name: Landing Template
 */
-get_template_part('includes/header');
+get_template_part('includes/landing/header');
 
 get_template_part('includes/landing/video');
 

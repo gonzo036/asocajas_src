@@ -14,7 +14,7 @@
 
 	?>
 <section id="cifras-animadas">
-  <div class="container">
+  <div class="container-fluid">
     <div class="row">
       <div class="col-md-6">
         <?php echo $cifra1; ?>

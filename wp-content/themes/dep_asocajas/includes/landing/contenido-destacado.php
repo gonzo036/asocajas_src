@@ -16,7 +16,7 @@
 	?>
 
   <section id="destacado">
-    <div class="container destacado">
+    <div class="container-fluid destacado">
 			<div class="row">
 				<div class="col-md-6 destacado-texto">
 					<h1><?php echo $titulo ?></h1>
