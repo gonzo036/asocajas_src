@@ -49,8 +49,10 @@ Class My_Recent_Posts_Widget extends WP_Widget_Recent_Posts {
         
     if( empty( $instance['number'] ) || ! $number = absint( $instance['number'] ) )
       $number = 10;
+
+    global $post;
           
-    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish', 'ignore_sticky_posts' => true ) ) );
+    $r = new WP_Query( apply_filters( 'widget_posts_args', array( 'posts_per_page' => $number, 'no_found_rows' => true, 'post_status' => 'publish','post__not_in' => array( $post->ID ), 'ignore_sticky_posts' => true ) ) );
     if( $r->have_posts() ) :
       
       echo $before_widget;

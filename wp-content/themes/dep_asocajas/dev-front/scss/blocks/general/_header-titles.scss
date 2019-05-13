@@ -12,5 +12,10 @@ section {
 				@include font(36px);
 			}
 		}
+
+		h3 {
+			padding: rem(12px) 0;
+			text-align: center;
+		}
 	}
 }

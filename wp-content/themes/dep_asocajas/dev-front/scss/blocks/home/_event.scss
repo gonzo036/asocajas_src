@@ -1,14 +1,15 @@
 .home-event {
 	position: relative;
-	//padding: rem(30px);
+	padding: rem(30px) rem(10px);
 	text-align: center;
 	width: 100%;
-	//min-height: rem(520px);
-	@include bgcover;
+	min-height: rem(220px);
+	background: $white !important;
 	@include mq('md') {
+		@include bgcover;
 		text-align: left;
 		margin: rem(30px) 0;
-		//padding: rem(100px) 0;
+		padding: inherit;
 	}
 
 	img {
@@ -40,14 +41,18 @@
 	&--link {
 		@include marineBtn(14px);
 		vertical-align: middle;
-		position: absolute;
-		top: -100px;
-		left: 50px;
+		margin-top: rem(12px);
+		@include mq('md') {
+			position: absolute;
+			top: -100px;
+			left: 50px;
+		}
 	}
 
 	&--buy {
 		display: inline-block;
 		vertical-align: middle;
+		margin-top: rem(12px);
 		width: rem(207px);
 		height: rem(46px);
 		@include iconBg('../images/buttons/buy-btn.png', 207px);
