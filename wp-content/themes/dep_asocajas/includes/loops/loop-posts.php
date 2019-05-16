@@ -3,8 +3,9 @@
 	// Filter component by date
 	setlocale(LC_ALL,"es_ES");
 
-	$month = $_POST['month'];
-	$year = $_POST['year'];
+	$month = $_POST['register_month'];
+	$year = $_POST['register_year'];
+	$cat = $_POST['register_cat'];
 	$date = DateTime::createFromFormat('!m', $month);
 	$monthName = strftime('%B', mktime(0, 0, 0, $month));
 	$args;
@@ -14,18 +15,23 @@
 <section id="MainPost">
 	<div class="container pod-news">
 		<header>
-			<h2>Noticias</h2>
+			<h2>Noticias<?php if($cat && $cat != 'all'): ?> de <?php echo ucfirst($cat); ?> <?php endif; ?></h2>
 			<?php if($month): ?>
 				<h3>Notas emitidas en <?php echo ucfirst($monthName); ?> de <?php echo $year; ?></h3>
 			<?php endif; ?>
 		</header>
 		<div class="wrapper-form filter">
-			<form action="<?php the_permalink()?>" method="post">
-				<div class="form-item form-item--label">
-					<h4>Emitida en:</h4>
+			<form id="FilterTop" action="<?php the_permalink()?>" method="post">
+				<div class="form-item form-item--select">
+					<select required name="register_cat">
+						<option value="">Categoría</option>
+						<option value="all">Todas</option>
+						<option value="asocajas">Asocajas</option>
+						<option value="afiliadas">Afiliadas</option>
+					</select>
 				</div>
 				<div class="form-item form-item--select">
-					<select name="month">
+					<select required name="register_month">
 						<option value="">Mes</option>
 						<option value="01">Enero</option>
 						<option value="02">Febrero</option>
@@ -42,7 +48,7 @@
 					</select>
 				</div>
 				<div class="form-item form-item--select">
-					<select name="year">
+					<select required name="register_year">
 						<option value="">Año</option>
 						<option value="2017">2017</option>
 						<option value="2018">2018</option>
@@ -59,40 +65,51 @@
 		<div id="postsWrapper" class="pod-news--wrapper">
 	
 			<?php
-
 				// Filter component by date
 
-				if(!empty($month) && !empty($year)) {
+				if($month && $year && $cat) {
 
-					//$args = array( 
-					//	'post_type' => 'post', 
-					//	'posts_per_page' => 9,
-					//	'date_query' => array(
-					//	array(
-					//			'year' => date($year),
-					//			'month' => date($month)
-					//		)
-					//	),
-					//);
-
-					$args = array ( 
-						'post_type' => 'post',
-						'date_query' => array(
-						array (
-								'year' => intval($year),
-								'month' => intval($month)
-							)
-						),
-					);
+					if($cat != 'all'){
+						$args = array ( 
+							'post_type' => 'post',
+							'posts_per_page' => 9,
+							'category_name' => $cat,
+							'date_query' => array(
+							    array(
+							    	'column'  => 'post_date',
+							        'after' => $year.'-'.$month.'-'.'01',
+							        'before' => $year.'-'.$month.'-'.'30',
+							        'inclusive' => true,
+							    ),
+							),
+						);
+					} else {
+						$args = array ( 
+							'post_type' => 'post',
+							'posts_per_page' => 9,
+							'date_query' => array(
+							    array(
+							    	'column'  => 'post_date',
+							        'after' => $year.'-'.$month.'-'.'01',
+							        'before' => $year.'-'.$month.'-'.'30',
+							        'inclusive' => true,
+							    ),
+							),
+						);
+					}
 
 				} else {
+
 					$args = array( 
 						'post_type' => 'post', 
 						'posts_per_page' => 9
 					);
 				}
 
+
 				$query = new WP_Query( $args );
+
+				
 				
 				if($query->have_posts()):
 
@@ -137,17 +154,14 @@
 					</div>
 				</article>
 			<?php
-				endwhile;
+				endwhile; wp_reset_query();
 				else:
 			?>
 				<div class="no-content">
-					<h2>No existen Notas de Prensa con ese criterio de fechas, por favor intenta de nuevo</h2>
+					<h2>No existen Notas de Prensa con ese criterio de fechas o categoría, por favor intenta de nuevo</h2>
 				</div>
 			<?php endif; ?>
 
-			<?php
-				wp_reset_query();
-			?>
 		</div>
 	</div>
 </section>
