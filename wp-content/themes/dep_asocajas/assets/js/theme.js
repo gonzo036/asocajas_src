@@ -410,7 +410,7 @@
 /* 1 */
 /***/ (function(module, exports) {
 
-// removed by extract-text-webpack-plugin
+throw new Error("Module build failed: ModuleBuildError: Module build failed: \r\n    background-color: $fucsia;\r\n                     ^\r\n      Undefined variable: \"$fucsia\".\r\n      in C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\scss\\landing\\footer.scss (line 3, column 23)\n    at runLoaders (C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\webpack\\lib\\NormalModule.js:192:19)\n    at C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\loader-runner\\lib\\LoaderRunner.js:367:11\n    at C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\loader-runner\\lib\\LoaderRunner.js:233:18\n    at context.callback (C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\loader-runner\\lib\\LoaderRunner.js:111:13)\n    at Object.asyncSassJobQueue.push [as callback] (C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\sass-loader\\lib\\loader.js:55:13)\n    at Object.done [as callback] (C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\neo-async\\async.js:8077:18)\n    at options.error (C:\\Users\\Depura J\\asocajas_src\\wp-content\\themes\\dep_asocajas\\dev-front\\node_modules\\node-sass\\lib\\index.js:294:32)");
 
 /***/ }),
 /* 2 */

@@ -1,13 +1,34 @@
 section {
 	&#destacado {
+
+		min-height: rem(540px);
+		@include mq('md') {
+			padding: rem(38px);
+		}
+		width: 100%;
     .destacado-texto{
 
+h1{
+	font-size:rem(130px);
+	color: $naranja;
+	padding: rem(35px);
+
+}
+p{
+
+}
     }
     .destacado-item{
-      margin: 15px;
+
     }
     .item{
-      background-color: #red;
+      background-color: $naranja;
+			padding: rem(35px);
+			margin: rem(20px) auto;
     }
+		.item p{
+			color: $white;
+			font-size:rem(30px);
+		}
   }
 }

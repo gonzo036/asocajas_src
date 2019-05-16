@@ -14,7 +14,7 @@
 	?>
   <section id="porcentajes">
     <div class="container-fluid">
-      <div class="row">
+      <div class="row porcentaje-content">
         <?php
 
         while(have_rows('porcentajes')): the_row();

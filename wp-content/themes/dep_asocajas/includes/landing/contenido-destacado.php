@@ -18,11 +18,11 @@
   <section id="destacado">
     <div class="container-fluid destacado">
 			<div class="row">
-				<div class="col-md-6 destacado-texto">
+				<div class="col-md-7 destacado-texto">
 					<h1><?php echo $titulo ?></h1>
 					<p><?php echo $contenido; ?></p>
 				</div>
-				<div class="col-md-6 destacado-item">
+				<div class="col-md-5 destacado-item">
 					<?php
           if ($item_destacado):
 					while(have_rows('item_destacado')): the_row();
@@ -32,7 +32,7 @@
 					<?php if($texto || $imagen): ?>
 					<div class="item">
 						<p><?php echo $texto; ?></p>
-						<img src="<?php echo $imagen; ?>" alt="">
+						<img src="<?php echo $imagen; ?>" alt="" width="100%" height="auto">
 					</div>
 					<?php endif; ?>
 

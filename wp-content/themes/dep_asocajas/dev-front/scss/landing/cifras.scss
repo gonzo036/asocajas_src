@@ -1,0 +1,22 @@
+section {
+	&#cifras-animadas {
+    background-color: $azul;
+		min-height: rem(540px);
+		@include mq('md') {
+			padding: rem(38px);
+		}
+    .cifras-texto h1{
+    	font-size:100px;
+    	color: $morado;
+    	padding: rem(35px);
+
+    }
+    .cifras-texto h3{
+      color:$white;
+      font-size:40;
+    }
+    .cifras-texto p{
+      color: $white;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+section {
+	&#porcentajes {
+    background-color: $azul;
+		min-height: rem(540px);
+		@include mq('md') {
+			padding: rem(38px);
+		}
+    .porcentaje-content{
+      	padding: rem(35px);
+      text-align: center;
+
+    }
+    .item h2{
+      font-size: 8rem;
+      color: $white;
+    }
+    .item p{
+      color: $white;
+    }
+    .item{
+      padding: rem(35px);
+      margin: rem(20px) auto;
+      display: block;
+      text-align: left;
+      @include mq('md') {
+        display: inline-block;
+        vertical-align: top;
+
+        margin: rem(20px) rem(10px);
+      }
+    }
+  }
+}
