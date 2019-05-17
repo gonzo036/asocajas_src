@@ -1,6 +1,6 @@
 <section id="redes">
-  <div class="container-fluid">
-    <div class="row text-center">
+  <div class="container-fluid text-center">
+    <div class="row titulo-redes">
         <p>Encuentra más en nuestras redes sociales</p>
     </div>
   <div class="redes">

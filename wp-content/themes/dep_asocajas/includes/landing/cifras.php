@@ -22,7 +22,7 @@
             <?php echo $cifra2; ?>
           </div>
           <div class="col-md-6">
-            <img src="https://www.asocajas.org.co/wp-content/uploads/2019/05/Desarrollo.gif" alt="gif asocajas" width="100%" height="auto">
+            <img src="https://www.asocajas.org.co/wp-content/uploads/2019/05/Tuercas-gif.gif" alt="gif asocajas" width="100%" height="auto">
           </div>
 
       </div>

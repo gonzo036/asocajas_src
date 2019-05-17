@@ -17,18 +17,13 @@
 </div>
 <![endif]-->
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="landing navbar-default navbar-static-top">
   <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+    <div class="">
+
       <a href="<?php echo home_url('/'); ?>"> <img src="<?php echo home_url('/'); ?>wp-content/uploads/2019/05/logo-creemos-creamos.png" alt=""> </a>
     </div>
-    <div class="collapse navbar-collapse" id="navbar">
+    <div class="" id="navbar">
       <?php
             wp_nav_menu( array(
                 'menu' => 'landing',

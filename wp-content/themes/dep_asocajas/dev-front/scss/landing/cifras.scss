@@ -1,7 +1,7 @@
 section {
 	&#cifras-animadas {
     background-color: $azul;
-		min-height: rem(540px);
+
 		@include mq('md') {
 			padding: rem(38px);
 		}

@@ -1,5 +1,12 @@
 section {
 	&#redes {
     background-color: $fucsia;
+		margin-top: 15px;
+		@include mq('md') {
+			padding: rem(38px);
+		}
+		.titulo-redes p{
+			color:$white;
+		}
   }
 }
