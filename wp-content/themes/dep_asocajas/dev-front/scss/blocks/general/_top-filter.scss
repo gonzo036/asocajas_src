@@ -19,7 +19,7 @@
 				
 				&--select {
 					@include mq('md') {
-						width: 29%;
+						width: 20%;
 					}
 					select {
 						@include mq('md') {
@@ -35,7 +35,7 @@
 				}
 				&--actions {
 					@include mq('md') {
-						width: 28%;
+						width: 34%;
 					}
 
 					> span {
