@@ -17,25 +17,27 @@
 </div>
 <![endif]-->
 
-<nav class="landing navbar-default navbar-static-top">
-  <div class="container">
-    <div class="">
-
+<nav class="landing navbar-default navbar-static-top nav-creamos">
+  <div class="container-fluid nav-creamos-wrapper">
+    <div class="nav-creamos-brand">
       <a href="<?php echo home_url('/'); ?>"> <img src="<?php echo home_url('/'); ?>wp-content/uploads/2019/05/logo-creemos-creamos.png" alt=""> </a>
     </div>
-    <div class="" id="navbar">
+    
+    <div class="nav-creamos-menu" id="navbar">
       <?php
-            wp_nav_menu( array(
-                'menu' => 'landing',
-                'theme_location'    => 'navbar-left',
-                'depth'             => 2,
-                'menu_class'        => 'nav navbar-nav',
-                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                'walker'            => new wp_bootstrap_navwalker())
-            );
+          wp_nav_menu( array(
+              'menu'              => 'landing',
+              'theme_location'    => 'navbar-left',
+              'depth'             => 2,
+              'menu_class'        => 'nav navbar-nav',
+              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+              'walker'            => new wp_bootstrap_navwalker())
+          );
         ?>
     </div><!-- /.navbar-collapse -->
-    <a href="<?php echo home_url('/'); ?>"> <img src="<?php echo home_url('/'); ?>wp-content/uploads/2019/05/Logo-asocajas.png" alt=""> </a>
+    <div class="nav-creamos-sponsor">
+      <a href="<?php echo home_url('/'); ?>"> <img src="<?php echo home_url('/'); ?>wp-content/uploads/2019/05/Logo-asocajas.png" alt=""> </a>
+    </div>
 
   </div><!-- /.container -->
 </nav>

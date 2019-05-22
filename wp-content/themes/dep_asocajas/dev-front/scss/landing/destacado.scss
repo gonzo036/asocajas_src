@@ -1,6 +1,6 @@
 section {
 	&#destacado {
-
+		@include wrapper;
 		min-height: rem(540px);
 		@include mq('md') {
 			padding: rem(38px);
@@ -8,10 +8,13 @@ section {
 		width: 100%;
     .destacado-texto{
 
-h1{
-	font-size:rem(130px);
+h1 {
+	font-size:rem(40px);
 	color: $naranja;
 	padding: rem(35px);
+	@include mq('md') {
+		font-size:rem(90px);
+	}
 
 }
 p{
@@ -23,8 +26,8 @@ p{
     }
     .item{
       background-color: $naranja;
-			padding: rem(35px);
-			margin: rem(20px) auto;
+		padding: rem(35px);
+		margin: rem(20px) auto;
     }
 		.item p{
 			color: $white;

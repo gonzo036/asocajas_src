@@ -8,7 +8,7 @@
 
 */
 
-	$titulo = get_field('titulo');
+  $titulo = get_field('titulo');
   $contenido = get_field('contenido');
   $item_destacado = get_field('item_destacado')
 

@@ -382,6 +382,39 @@
 		}
 	};
 
+	// -- Landing -- //
+	var $LandingScope = {
+
+		// Constructor
+		init: function init() {
+			// Instance functions
+			this.videoSlider();
+		},
+
+		// Scripts Video
+		videoSlider: function videoSlider() {
+			var slider_wrapper = $('.video-news--wrapper');
+			var slick_settings = {
+				dots: false,
+				arrows: true,
+				slidesToShow: 3,
+				infinite: false,
+				slidesToScroll: 3,
+				responsive: [{
+					breakpoint: 680,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}]
+			};
+
+			if (!slider_wrapper.hasClass('slick-initialized')) {
+				var slick_slider = slider_wrapper.slick(slick_settings);
+			}
+		}
+	};
+
 	// Trigger
 	$GeneralScope.init();
 
@@ -403,6 +436,11 @@
 	// Event Single
 	if ($('body').hasClass('single-eventos')) {
 		$eventScope.init();
+	}
+
+	// Landing Scripts
+	if ($('body').hasClass('page-template-templates_landing-tpl-php')) {
+		$LandingScope.init();
 	}
 })(jQuery);
 
