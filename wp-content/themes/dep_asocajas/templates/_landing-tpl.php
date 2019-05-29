@@ -9,10 +9,17 @@ get_template_part('includes/landing/video');
 
 get_template_part('includes/loops/loop','videos');
 
+get_template_part('includes/landing/galeria');
+
 get_template_part('includes/landing/contenido-destacado');
 
-get_template_part('includes/landing/cifras');
+?>
+<div class="prefooter">
+	<?php
+	get_template_part('includes/landing/cifras');
+	get_template_part('includes/landing/porcentajes');
+	?>
+</div>
 
-get_template_part('includes/landing/porcentajes');
-
+<?php
 get_template_part('includes/landing/footer');

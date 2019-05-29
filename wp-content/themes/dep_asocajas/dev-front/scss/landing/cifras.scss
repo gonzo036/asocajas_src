@@ -1,22 +1,36 @@
 section {
 	&#cifras-animadas {
-    background-color: $azul;
-
 		@include mq('md') {
-			padding: rem(38px);
+			padding: 0 rem(38px) rem(38px);
 		}
-    .cifras-texto h1{
-    	font-size:100px;
-    	color: $morado;
-    	padding: rem(35px);
+    .cifras {
+      &-texto {
+        color: $white;
+        text-align: center;
+        @include mq('md') {
+          text-align: left;
+        }
+        &--item {
+          h1 {
+            @include font(50px);
+            color: $morado;
+            padding: 0 0;
+            @include mq('md') {
+              @include font(150px);
+              margin-top: rem(-110px);
+            }
+          }
 
-    }
-    .cifras-texto h3{
-      color:$white;
-      font-size:40;
-    }
-    .cifras-texto p{
-      color: $white;
+          h3 {
+            margin-top: 0;
+            @include font(40px);
+          }
+
+          p {
+            @include font(20px);
+          }
+        }
+      }
     }
   }
 }

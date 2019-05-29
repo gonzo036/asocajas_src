@@ -19,6 +19,7 @@ $browser-context: 16; // Default
   $media-sm: "(min-width: 768px)";  // Tablets
   $media-md: "(min-width: 992px)"; // Escritorios
   $media-lg: "(min-width: 1200px)"; // Resoluciones grandes
+  $media-hd: "(min-width: 1400px)"; // Resoluciones HD
   
   @if $consulta == xxs {
     @media #{$media-xxs} { @content; }
@@ -34,6 +35,9 @@ $browser-context: 16; // Default
   }
   @else if $consulta == lg {
     @media #{$media-lg}  { @content; }
+  }
+  @else if $consulta == hd {
+    @media #{$media-hd}  { @content; }
   }
 }
 

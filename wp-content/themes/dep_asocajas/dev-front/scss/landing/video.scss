@@ -17,12 +17,35 @@ body {
 					text-transform: unset;
 					text-transform: lowercase;
 					text-align: left;
-					line-height: 1;
+					line-height: 0.5;
 					@include font(40px);
 					color: $white;					
 					@include mq('md') {
 						@include font(130px);
 					}
+				}
+			}
+
+			&--item {
+				position: relative;
+				transition: all 0.3s;
+				&:hover {
+					.video-news--caption {
+						opacity: 1;
+					}
+				}
+			}
+
+			&--caption {
+				opacity: 0;
+				@include coverAbsolute(0);
+				background-color: rgba($naranja,0.85);
+				text-align: center;
+				h3 {
+					display: inline-block;
+					@include font(18px);
+					color: $white;
+					@include center('both');
 				}
 			}
 		}

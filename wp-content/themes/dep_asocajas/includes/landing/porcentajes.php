@@ -13,7 +13,7 @@
 
 	?>
   <section id="porcentajes">
-    <div class="container-fluid">
+    <div class="container">
       <div class="row porcentaje-content">
         <?php
 
@@ -23,10 +23,9 @@
 
         ?>
 
-        <div class="item">
+        <div class="porcentaje-content--item">
           <img src="<?php echo $icono ?>" alt="">
-          <p><?php echo $contenido ?></p>
-
+          <div class="porcentaje-content--item--caption"><?php echo $contenido ?></div>
         </div>
 
         <?php
