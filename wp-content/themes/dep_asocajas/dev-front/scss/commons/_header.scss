@@ -64,8 +64,11 @@
 						padding-bottom: 0;
 						text-transform: uppercase;
 						font-family: $bd;
-						@include font(11px);
+						@include font(14px);
 						color: $white;
+						@include mq('sm') {
+							@include font(11px);
+						}
 						&:hover,
 						&:focus {
 							background-color: transparent;
