@@ -4,14 +4,15 @@
   video
 
 */
+	$id_video= get_field('id_video');
 
-	$video = get_field('video');
 
 	?>
   <section id="video">
-    <div class="container-fluid video text-center">
-      <video autoplay loop id="video-background" class="vdo-lnd" plays-inline controls>
-              <source src="<?php echo $video; ?>" type="video/mp4">
-      </video>
+		<div class="video-wrapper">
+      <?php if($video): ?>
+          <iframe width="100%" height="600px" src="https://www.youtube.com/embed/<?php echo $id_video; ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+      <?php endif; ?>
     </div>
   </section>
