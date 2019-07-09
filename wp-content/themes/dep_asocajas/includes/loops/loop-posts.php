@@ -63,14 +63,14 @@
 			</form>
 		</div>
 		<div id="postsWrapper" class="pod-news--wrapper">
-	
+
 			<?php
 				// Filter component by date
 
 				if($month && $year && $cat) {
 
 					if($cat != 'all'){
-						$args = array ( 
+						$args = array (
 							'post_type' => 'post',
 							'posts_per_page' => 9,
 							'category_name' => $cat,
@@ -84,7 +84,7 @@
 							),
 						);
 					} else {
-						$args = array ( 
+						$args = array (
 							'post_type' => 'post',
 							'posts_per_page' => 9,
 							'date_query' => array(
@@ -100,8 +100,8 @@
 
 				} else {
 
-					$args = array( 
-						'post_type' => 'post', 
+					$args = array(
+						'post_type' => 'post',
 						'posts_per_page' => 9
 					);
 				}
@@ -109,8 +109,8 @@
 
 				$query = new WP_Query( $args );
 
-				
-				
+
+
 				if($query->have_posts()):
 
 				while ( $query->have_posts() ) : $query->the_post();
@@ -124,7 +124,7 @@
 					} else {
 						$hover = $def;
 					}
-					
+
 			?>
 				<article class="pod-news--item">
 					<div class="pod-news--overlay">
@@ -146,7 +146,7 @@
 						<h3>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
-							</a>				
+							</a>
 						</h3>
 						<h4>
 							<?php the_time('F j, Y'); ?>
