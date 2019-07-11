@@ -102,7 +102,9 @@
 
 					$args = array(
 						'post_type' => 'post',
-						'posts_per_page' => 9
+						'posts_per_page' => 9,
+						'paged'          => $paged,
+						'page'           => $paged,
 					);
 				}
 
@@ -154,7 +156,11 @@
 					</div>
 				</article>
 			<?php
-				endwhile; wp_reset_query();
+				endwhile;
+				if (function_exists(custom_pagination)) {
+					custom_pagination($query->max_num_pages, "", $paged);
+				}
+				wp_reset_query();
 				else:
 			?>
 				<div class="no-content">
