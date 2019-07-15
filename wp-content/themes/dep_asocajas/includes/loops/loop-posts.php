@@ -9,6 +9,7 @@
 	$date = DateTime::createFromFormat('!m', $month);
 	$monthName = strftime('%B', mktime(0, 0, 0, $month));
 	$args;
+	$paged = (get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
 ?>
 
@@ -73,6 +74,7 @@
 						$args = array (
 							'post_type' => 'post',
 							'posts_per_page' => 9,
+							'paged'          => $paged,
 							'category_name' => $cat,
 							'date_query' => array(
 							    array(
@@ -87,6 +89,7 @@
 						$args = array (
 							'post_type' => 'post',
 							'posts_per_page' => 9,
+							'paged'          => $paged,
 							'date_query' => array(
 							    array(
 							    	'column'  => 'post_date',
@@ -104,7 +107,6 @@
 						'post_type' => 'post',
 						'posts_per_page' => 9,
 						'paged'          => $paged,
-						'page'           => $paged,
 					);
 				}
 
@@ -157,9 +159,11 @@
 				</article>
 			<?php
 				endwhile;
+
 				if (function_exists(custom_pagination)) {
 					custom_pagination($query->max_num_pages, "", $paged);
 				}
+				
 				wp_reset_query();
 				else:
 			?>

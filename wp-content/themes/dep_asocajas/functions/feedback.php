@@ -4,6 +4,17 @@ Custom feedback comments
 https://codex.wordpress.org/Function_Reference/wp_list_comments#Comments_Only_With_A_Custom_Comment_Display
 */
 
+if ( ! function_exists( 'ucc_add_cpts_to_pre_get_posts' ) ) {
+    function ucc_add_cpts_to_pre_get_posts( $query ) {
+    if ( $query->is_main_query() && ! is_post_type_archive() && ! is_archive() && ! is_search() && ! is_singular() && ! is_404() ) {
+        $my_post_type = get_query_var( 'post_type' );
+        if ( empty( $my_post_type ) ) {
+            $query->set('post_type', 'post');
+        }
+    }
+}
+}add_action( 'pre_get_posts', 'ucc_add_cpts_to_pre_get_posts' );
+
 function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
   if (empty($pagerange)) {
     $pagerange = 2;
@@ -33,7 +44,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
    * function.
    */
   $pagination_args = array(
-    'base'         => get_pagenum_link(1).'%_%',
+    'base'         => @add_query_arg('paged','%#%'),
     'format'       => '/%#%',
     'total'        => $numpages,
     'current'      => $paged,
@@ -50,7 +61,7 @@ function custom_pagination($numpages = '', $pagerange = '', $paged = '') {
   $paginate_links = paginate_links($pagination_args);
   if ($paginate_links) {
     echo "<nav class='custom-pagination'>";
-    echo "<span class='page-numbers page-num'>Page ".$paged." of ".$numpages."</span> ";
+    echo "<span class='page-numbers page-num'>Página ".$paged." de ".$numpages."</span> ";
     echo $paginate_links;
     echo "</nav>";
   }
