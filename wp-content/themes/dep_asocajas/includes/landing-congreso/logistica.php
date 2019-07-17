@@ -12,7 +12,10 @@
   <section id="logistica-block">
 <div class="container">
   <div class="row">
-    <h2>LOGISTICA</h2>
+    <header>
+      <h2>LOGISTICA</h2>
+    </header>
+
   </div>
   <div class="row">
     <?php
@@ -35,6 +38,7 @@
   </div>
 
 </div>
+
   </section>
   <?php
   endif;
