@@ -72,7 +72,7 @@ $browser-context: 16; // Default
   background-position: center top;
 }
 
-@mixin iconBg($path, $size){
+@mixin iconBg($path, $size:100%){
   background-image: url($path);
   background-size: $size;
   background-repeat: no-repeat;
@@ -221,4 +221,14 @@ $browser-context: 16; // Default
   &:hover {
     background-color: $black;
   }
+}
+
+@mixin outlineBtn($size:rem(16px),$color:$white,$border:$white){
+    font-size: $size;
+    border-radius: rem(32px);
+    color: $color;
+    border: rem(2px) solid $border;
+    display: inline-block;
+    padding: rem(14px);
+    min-width: rem(120px);
 }

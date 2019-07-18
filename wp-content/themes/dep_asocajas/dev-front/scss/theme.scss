@@ -78,9 +78,14 @@
 // ------------------------ //
 // -- Landing -- //
 // ------------------------ //
-@import 'landing/header';
-@import 'landing/video';
-@import 'Landing/destacado';
-@import 'landing/cifras';
-@import 'landing/footer';
-@import 'landing/porcentajes';
+@import 'landing/report/header';
+@import 'landing/report/video';
+@import 'Landing/report/destacado';
+@import 'landing/report/cifras';
+@import 'landing/report/footer';
+@import 'landing/report/porcentajes';
+
+@import 'landing/congreso/commons';
+@import 'landing/congreso/header';
+@import 'landing/congreso/event-info';
+@import 'landing/congreso/exposer';

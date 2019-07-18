@@ -423,6 +423,41 @@
 		},
 	}
 
+	// -- Event Congress -- //
+	const $congressScope = {
+		// Constructor
+		init: function() {
+			this.ponentsCarousel();
+		},
+
+		ponentsCarousel: function() {
+			let eventWrapper = $('.event-ponents');
+
+			if(eventWrapper.length > 0) {
+				let slick_settings = {
+					dots: false,
+					arrows: true,
+					slidesToShow: 4,
+					slidesToScroll: 4,					
+					accessibility: false,
+					responsive: [				
+						{
+							breakpoint: 680,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				}
+
+				if(!eventWrapper.hasClass('slick-initialized')) {
+					const eventWrapperSlider = eventWrapper.slick(slick_settings);
+				}
+			}
+		}
+	}
+
 	// Trigger 
 	$GeneralScope.init();
 
@@ -449,6 +484,11 @@
 	// Landing Scripts
 	if($('body').hasClass('page-template-templates_landing-tpl-php')) {
 		$LandingScope.init();
+	}
+
+	if($('body').hasClass('page-template-templates_congreso-tpl-php')) {
+		$eventScope.init();
+		$congressScope.init();
 	}
 
 })(jQuery);

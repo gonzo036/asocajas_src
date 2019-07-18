@@ -3,7 +3,9 @@
 		input {
 			&[type="text"],
 			&[type="email"],
-			&[type="tel"] {
+			&[type="tel"],
+			&[type="date"],
+			&[type="number"] {
 				display: block;
 				color: $gray;
 				border-radius: 0;

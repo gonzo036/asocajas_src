@@ -21,18 +21,22 @@
         <img src="<?php echo $banner; ?>" alt="" width="100%" height="auto">
       <?php endif; ?>
     </div>
-    <div class="container">
+    
+    <div class="container-fluid event-info">
       <div class="row">
-        <div class="col-md-6">
-          <h3><?php echo $fecha_congreso; ?></h3>
-        </div>
-        <div class="col-md-6">
-          <h3><?php echo $lugar_congreso; ?></h3>
+        <div class="event-info-wrapper">
+          <div class="event-info-wrapper__date">
+            <h3><?php echo $fecha_congreso; ?></h3>
+          </div>
+          <div class="event-info-wrapper__place">
+            <h3><?php echo $lugar_congreso; ?></h3>
+          </div>
         </div>
       </div>
-      <div class="row">
+      <div class="event-info-cta">
         <a href="<?php echo $link_agenda; ?>"> <h3>CONOCE LA AGENDA AQUI</h3> </a>
       </div>
 
     </div>
+
   </section>

@@ -1,0 +1,9 @@
+body {
+	&.page-template-templates_congreso-tpl-php {
+		header {
+			&.navbar {
+				background-color: $l-pink;
+			}
+		}
+	}
+}

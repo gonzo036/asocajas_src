@@ -1,0 +1,34 @@
+// Landing Color Vars
+$l-pink:   #DA1B7E;
+$l-pink2:  #E80F8B;
+$l-purple: #461269;
+
+body {
+	&.page-template-templates_congreso-tpl-php {
+		// Layout fixes
+		.container-fuild {
+			margin: 0 0;
+			padding: 0 0;
+		}
+
+		.row {
+			margin: 0 0;
+			padding: 0 0;
+		}
+
+		// Slick pagers
+		.slick-prev,
+		.slick-next {
+			width: rem(35px);
+			height: rem(55px);
+		}
+
+		.slick-prev {
+			@include iconBg('../images/icons/duo-left.svg');
+		}
+		.slick-next {
+			@include iconBg('../images/icons/duo-right.svg');
+		}
+	}
+}
+
