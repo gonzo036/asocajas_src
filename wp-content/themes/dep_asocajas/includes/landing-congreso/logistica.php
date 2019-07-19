@@ -9,15 +9,15 @@
   if($item_logistico):
 	?>
 
-  <section id="logistica-block">
+<section id="logistica-block" class="logistics">
 <div class="container">
-  <div class="row">
+  <div class="logistics-header">
     <header>
       <h2>LOGISTICA</h2>
     </header>
 
   </div>
-  <div class="row">
+  <div class="logistics__wrapper">
     <?php
 
       while(have_rows('item-logistico')): the_row();
@@ -25,7 +25,7 @@
         $logo = get_sub_field('logo');
         $informacion = get_sub_field('informacion');
     ?>
-    <div class="item-logistico">
+    <div class="logistics__wrapper-item">
       <h3><?php echo $titulo; ?></h3>
       <img src="<?php echo $logo; ?>" alt="">
       <div class="informacion-logistica">
