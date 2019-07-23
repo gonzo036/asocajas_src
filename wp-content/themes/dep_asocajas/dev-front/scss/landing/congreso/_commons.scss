@@ -19,15 +19,27 @@ body {
 		// Slick pagers
 		.slick-prev,
 		.slick-next {
-			width: rem(35px);
-			height: rem(55px);
+			width: rem(25px);
+			height: rem(45px);
+			@include mq('md') {
+				width: rem(35px);
+				height: rem(55px);
+			}
 		}
 
 		.slick-prev {
+			left: 0;
+			@include mq('md') {
+				left: rem(-70px);
+			}
 			@include iconBg('../images/icons/duo-left.svg');
 		}
 		.slick-next {
-			@include iconBg('../images/icons/duo-right.svg');
+			right: 0;
+			@include mq('md') {
+				right: rem(-70px);
+			}
+			@include iconBg('../images/icons/duo-right.svg');			
 		}
 	}
 }
