@@ -13,7 +13,7 @@
 <div class="container">
   <div class="logistics-header">
     <header>
-      <h2>LOGISTICA</h2>
+      <h2>LOGÍSTICA</h2>
     </header>
 
   </div>
