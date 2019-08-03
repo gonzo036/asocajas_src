@@ -12,8 +12,8 @@
   $info_inscripcion= get_field('info_inscripcion');
 
 	?>
-  <section id="inscripciones">
-    <div class="inscripciones" style="background-image:url(<?php echo $imagen_de_fondo; ?>)">
+  <section id="inscripciones" style="background-image:url(<?php echo $imagen_de_fondo; ?>)">
+    <div class="inscripciones">
       <div class="">
         <div class="icono-header">
           <img src="" alt="">

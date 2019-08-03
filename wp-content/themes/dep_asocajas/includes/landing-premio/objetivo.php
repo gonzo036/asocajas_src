@@ -13,6 +13,9 @@
 	?>
   <section id="objetivo">
     <div class="banner-objetivo">
+			<div class="icono-header">
+				<img src="" alt="">
+			</div>
       <div class="objetivo-info">
         <?php echo $objetivo; ?>
       </div>
@@ -30,7 +33,10 @@
           <img src="<?php echo $icono; ?>" alt="">
           <p><?php echo $texto; ?></p>
         </div>
-      <?php endif; ?>
+
+      <?php 
+		endwhile;
+		endif; ?>
       </div>
     </div>
 

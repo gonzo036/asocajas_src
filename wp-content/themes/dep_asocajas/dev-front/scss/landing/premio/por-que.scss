@@ -1,0 +1,8 @@
+.fabio{
+  display: block;
+  @include mq('md') {
+    margin-top: rem(40px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

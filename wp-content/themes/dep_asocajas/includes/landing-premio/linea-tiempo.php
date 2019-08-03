@@ -8,14 +8,14 @@
 
 
 */
-
-	$linea_tiempo = get_field('linea_tiempo');
+/*
+	$linea_tiempo = get_field('linea_tiempo2');
 
 	if($linea_tiempo):
 
 	?>
 
-	<section id="homeTimeline">
+	<section id="premioTimeline">
     <div class="icono-header">
       <img src="" alt="">
     </div>
@@ -26,7 +26,7 @@
 		<div class="time-wrapper container time">
 			<ul class="time--numbers">
 				<?php
-				while(have_rows('linea_tiempo')): the_row();
+				while(have_rows('linea_tiempo2')): the_row();
 
 					$fecha = get_sub_field('fecha');
 					$imagen = get_sub_field('imagen');
@@ -48,7 +48,7 @@
 
 				$index = 1;
 
-				while(have_rows('linea_tiempo')): the_row();
+				while(have_rows('linea_tiempo2')): the_row();
 
 					$fecha = get_sub_field('fecha');
 					$imagen = get_sub_field('imagen');
@@ -66,5 +66,6 @@
 	</section>
 
 	<?php
-
 	endif;
+	?>
+*/

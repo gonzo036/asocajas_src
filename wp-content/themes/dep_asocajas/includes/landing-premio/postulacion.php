@@ -22,13 +22,14 @@
         <h3>REQUISITOS DE POSTULACIÓN</h3>
         <div class="requisitos">
           <div class="infografia">
-            
+						<img src="<?php echo $requisitos_infografia; ?>" alt="">
+						<?php echo $info_requisitos; ?>
           </div>
         </div>
       </div>
 
 
-      <div class="postulacion-proceso">
+      <div class="postulacion-proceso" style="background-image:url(https://www.asocajas.org.co/wp-content/uploads/2019/08/Fondo.png)">
         <div class="icono-header">
           <img src="" alt="">
         </div>
@@ -46,7 +47,9 @@
           <img src="<?php echo $icono; ?>" alt="">
           <p><?php echo $informacion; ?></p>
         </div>
-      <?php endif; ?>
+      <?php
+		endwhile;
+		endif; ?>
       </div>
     </div>
 
