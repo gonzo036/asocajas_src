@@ -12,14 +12,14 @@
 
 	?>
   <section id="objetivo">
-    <div class="banner-objetivo">
+    <div class="objetivo">
 			<div class="icono-header">
 				<img src="" alt="">
 			</div>
-      <div class="objetivo-info">
+      <div class="objetivo--info">
         <?php echo $objetivo; ?>
       </div>
-      <div class="objetivo-iconos">
+      <div class="objetivo--iconos iconos">
         <?php if($iconos_objetivo): ?>
 
         <?php
@@ -29,12 +29,12 @@
             $texto = get_sub_field('texto');
 
         ?>
-        <div class="objetivo-icono-item">
+        <div class="iconos--item">
           <img src="<?php echo $icono; ?>" alt="">
           <p><?php echo $texto; ?></p>
         </div>
 
-      <?php 
+      <?php
 		endwhile;
 		endif; ?>
       </div>

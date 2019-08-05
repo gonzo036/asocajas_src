@@ -29,7 +29,7 @@
       </div>
 
 
-      <div class="postulacion-proceso" style="background-image:url(https://www.asocajas.org.co/wp-content/uploads/2019/08/Fondo.png)">
+      <div class="postulacion-proceso">
         <div class="icono-header">
           <img src="" alt="">
         </div>

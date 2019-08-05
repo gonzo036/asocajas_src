@@ -4,6 +4,12 @@ $l-pink2:  #E80F8B;
 $l-purple: #461269;
 $l-blue: #4EA9C4;
 
+$lp-azul2: #3cc0c3;
+$lp-yellowLeft:#eb9c1a;
+$lp-yellowRigth:#ebba69;
+$lp-azul3:#172d53;
+$lp-gris:#b9b9b963;
+
 body {
 	&.page-template-templates_congreso-tpl-php {
 		// Layout fixes
@@ -40,8 +46,10 @@ body {
 			@include mq('md') {
 				right: rem(-70px);
 			}
-			@include iconBg('../images/icons/duo-right.svg');			
+			@include iconBg('../images/icons/duo-right.svg');
 		}
 	}
+	&.page-template-templates_premio-tpl-php {
+		background-image: url('../images/bgs/bg-cuadros.png');
+	}
 }
-

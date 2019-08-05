@@ -18,8 +18,8 @@
       <header>
         <h3>CRONOGRAMA</h3>
       </header>
-      <div class="cronograma-items">
-        <?php if($iconos_objetivo): ?>
+      <div class="cronograma--items fechas">
+        <?php if($cronograma): ?>
 
         <?php
 
@@ -28,11 +28,13 @@
             $titulo = get_sub_field('titulo');
 
         ?>
-        <div class="cronograma-item">
+        <div class="fechas--item">
           <img src="<?php echo $icono; ?>" alt="">
           <p><?php echo $titulo; ?></p>
         </div>
-      <?php endif; ?>
+      <?php
+		endwhile;
+		 endif; ?>
       </div>
     </div>
 

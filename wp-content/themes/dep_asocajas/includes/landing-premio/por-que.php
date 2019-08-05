@@ -9,19 +9,22 @@
   $info_por_que= get_field('info_por_que');
 
 	?>
-  <section id="banner-fabio" style="background-image:url(https://www.asocajas.org.co/wp-content/uploads/2019/08/Fondo.png)">
-		<div class="container fabio">
-			<div class="fabio-img">
+  <section id="banner-fabio">
+		<div class="fabio">
+			<div class="fabio--imagen">
 				<figure>
 					<img src="<?php echo $fabio_echeverry; ?>" alt="">
 				</figure>
 
 			</div>
-			<div class="fabio-info">
+			<div class="fabio--text">
 				<div class="icono-header">
 					<img src="" alt="">
 				</div>
-				<?php echo $info_por_que; ?>
+				<div class="">
+						<?php echo $info_por_que; ?>
+				</div>
+
 			</div>
 		</div>
 

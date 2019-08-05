@@ -1,0 +1,36 @@
+.fabio{
+  display: block;
+
+  @include mq('md') {
+    padding: rem(30px) rem(100px);
+    display: flex;
+
+  }
+  &--text {
+    display: block;
+    text-align: center;
+    @include mq('md') {
+      text-align: left;
+      width: 50%;
+
+    }
+
+    h3 {
+      text-transform: uppercase;
+      color: $lp-azul2;
+    }
+  }
+  &--imagen {
+    display: block;
+    text-align: center;
+    @include mq('md') {
+      width: 50%;
+
+    }
+    img {
+      display: inline-block;
+      max-width: 100%;
+      text-align: center;
+    }
+  }
+}

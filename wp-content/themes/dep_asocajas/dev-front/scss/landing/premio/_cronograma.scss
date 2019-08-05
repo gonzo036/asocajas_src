@@ -1,0 +1,38 @@
+.cronograma{
+
+
+  padding: rem(25px);
+  @include mq('md') {
+		padding: rem(38px);
+	}
+  .fechas {
+  	padding: rem(20px);
+  	text-align: center;
+  	&--item {
+  		display: block;
+  		margin: rem(20px) auto;
+  		@include mq('md') {
+  			display: inline-block;
+  			vertical-align: top;
+  			width: 20%;
+  			margin: rem(20px) rem(10px);
+  		}
+
+  		img {
+  			max-width: 100%;
+  			display: inline-block;
+  		}
+      p {
+        text-align: center !important;
+        text-transform: uppercase;
+        color: $white;
+        @include font(15px);
+        @include mq('md') {
+          @include font(18px);
+        }
+      }
+  	}
+
+
+  }
+}
