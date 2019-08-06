@@ -14,13 +14,17 @@
 	?>
   <section id="categorias">
     <div class="categorias">
-			<div class="icono-header">
-				<img src="" alt="">
-			</div>
-			<header>
+			
+		<header class="categorias__header container">
+			<span>
+				<div class="icono-header">
+					<img src="<?php bloginfo('template_url')?>/img/icono-criteriosevaluacion.png" alt="">
+				</div>
 				<h3>CATEGORÍAS DE EVALUACIÓN</h3>
-			</header>
-			<ul class="nav nav-pills">
+			</span>
+		</header>
+		<div class="categorias__wrapper container">
+			<ul class="nav nav-pills categorias__wrapper-pills">
 				<?php
 				 $cont=0;
 					while(have_rows('categorias_de_evaluacion')): the_row();
@@ -39,21 +43,21 @@
 				<?php
 					endwhile;
 				?>
-
 			</ul>
-			<div class="tab-content">
+			<!--Tab body-->
+			<div class="tab-content categorias__wrapper-tabs">
 
-	 		 <?php
-	 		 $cont=0;
-	 		 $active='in active';
-	 			 while(have_rows('categorias_de_evaluacion')): the_row();
-	 		 			$infografia = get_sub_field('infografia');
-						$descripcion= get_sub_field('descripcion');
-	 			 $cont++;
-	 		 ?>
-	 		 <?php if ($cont==1): ?>
+				<?php
+				$cont=0;
+				$active='in active';
+				while(have_rows('categorias_de_evaluacion')): the_row();
+					$infografia = get_sub_field('infografia');
+					$descripcion= get_sub_field('descripcion');
+					$cont++;
+				?>
+	 			 <?php if ($cont==1): ?>
 	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade <?php echo $active; ?>">
-					 <div class="caegoria-item">
+					 <div class="categorias__wrapper-tabs__item categoria-item">
 						 <div class="categoria-infografia">
 							 <figure>
 									<img src="<?php echo $infografia; ?>" alt="">
@@ -64,19 +68,18 @@
 						 </div>
 					 </div>
 	 			 </div>
-
-	 		 <?php else: ?>
+	 			 <?php else: ?>
 	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade">
-					 <div class="caegoria-item">
-						 <div class="categoria-infografia">
-							 <figure>
-									<img src="<?php echo $infografia; ?>" alt="">
-							 </figure>
-						 </div>
-						 <div class="categoria-info">
+					<div class="categorias__wrapper-tabs__item categoria-item">						
+						<div class="categoria-infografia">
+							<figure>
+								<img src="<?php echo $infografia; ?>" alt="">
+							</figure>
+						</div>
+						<div class="categoria-info">
 							<?php echo $descripcion; ?>
-						 </div>
-					 </div>
+						</div>						
+					</div>
 	 			 </div>
 	 			 <?php
 	 				endif;
@@ -85,6 +88,9 @@
 	 				endwhile;
 	 			 ?>
 
-	 	 </div>
+	 		</div>
+
+		</div>
+		
     </div>
   </section>

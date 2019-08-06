@@ -12,11 +12,13 @@
 	?>
   <section id="cronograma">
     <div class="cronograma">
-      <div class="icono-header">
-        <img src="" alt="">
-      </div>
-      <header>
-        <h3>CRONOGRAMA</h3>
+      <header class="cronograma__header container">
+        <span>
+          <div class="icono-header">
+            <img src="<?php bloginfo('template_url')?>/img/icono-cronograma.png" alt="cronograma">
+          </div>
+          <h3>CRONOGRAMA</h3>
+        </span>
       </header>
       <div class="cronograma--items fechas">
         <?php if($cronograma): ?>
@@ -28,7 +30,7 @@
             $titulo = get_sub_field('titulo');
 
         ?>
-        <div class="fechas--item">
+        <div class="fechas--item <?php echo $titulo; ?>">
           <img src="<?php echo $icono; ?>" alt="">
           <p><?php echo $titulo; ?></p>
         </div>

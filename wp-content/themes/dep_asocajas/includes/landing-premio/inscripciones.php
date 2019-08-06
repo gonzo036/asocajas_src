@@ -14,14 +14,18 @@
 	?>
   <section id="inscripciones" style="background-image:url(<?php echo $imagen_de_fondo; ?>)">
     <div class="inscripciones">
-      <div class="">
-        <div class="icono-header">
-          <img src="" alt="">
-        </div>
-        <div class="inscripciones-info">
+      <header class="inscripciones__header container">
+        <span>
+          <div class="icono-header">
+            <img src="<?php bloginfo('template_url')?>/img/icono-inscripcione.png" alt="">
+          </div>
+          <h3>INSCRIPCIONES</h3>
+        </span>
+      </header>
+      <div class="inscripciones__info container">
+        <div class="inscripciones__info-side">
           <?php echo $info_inscripcion; ?>
         </div>
       </div>
     </div>
-
   </section>

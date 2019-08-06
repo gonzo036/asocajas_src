@@ -1,0 +1,111 @@
+.categorias {
+	padding: rem(20px) 0;
+	@include mq('md') {
+		padding: rem(90px) 0 rem(100px);
+	}
+	// Header
+	&__header {
+		text-align: left;
+		> span {
+			text-align: left;
+			display: inline-block;
+			color: $lp-purple;
+			img {
+				display: inline-block;
+			}
+		}
+	}
+
+	// Wrapper tabs
+	&__wrapper {
+		
+		// Navigation
+		&-pills {
+			display: flex;
+			> li {
+				float: none;
+				text-align: center;
+				margin: 0 rem(5px) 0 0;
+				a {
+					background-color: $lp-gray;
+					border-radius: 0 0 0 0;
+					margin: 0 0;
+					padding: rem(12px);
+					font-family: $bd;
+					@include font(17px);
+					&:hover,
+					&:focus,
+					&:active {
+						background-color: $lp-purple;
+						color: $white;
+					}
+				}
+
+				&:nth-child(1) {
+					a {
+						color: $lp-purple;
+					}
+				}
+				&:nth-child(2) {
+					a {
+						color: $lp-green;
+					}
+				}
+				&:nth-child(3) {
+					a {
+						color: $lp-red;
+					}
+				}
+				&:nth-child(4) {
+					a {
+						color: $lp-dkblue;
+					}
+				}
+
+				&.active {
+					a {
+						background-color: $lp-purple;
+						color: $white;
+					}
+				}
+			}
+		}
+		
+		// Wrapper tabs
+		&-tabs {
+			&__item {
+				background-color: $lp-purple;
+				color: $white;
+				padding: rem(32px) 0;
+
+				@include mq('md') {
+					padding: rem(52px) rem(32px);
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: center;
+					align-items: center;
+				}
+
+				> div {
+					margin-bottom: rem(22px);
+					@include mq('md') {
+						width: 50%;
+					}
+				}
+
+				.categoria-infografia {
+					text-align: center;
+					img {
+						display: inline-block;
+						max-width: 90%;
+					}
+				}
+				.categoria-info {
+					p, ul {
+						color: $white;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,3 +1,16 @@
-.jurados{
-background-color: $lp-gris;
+.jurados {
+	background-color: $lp-gris;
+	// Header
+	&__header {
+		padding-top: rem(32px);
+		text-align: left;
+		> span {
+			text-align: left;
+			display: inline-block;
+			color: $lp-purple;
+			img {
+				display: inline-block;
+			}
+		}
+	}
 }

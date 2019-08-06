@@ -20,6 +20,9 @@
       text-transform: uppercase;
       color: $white;
     }
+    p {
+      color: $white;
+    }
   }
   .iconos {
     display: flex;
@@ -48,7 +51,5 @@
         text-transform: uppercase;
       }
     }
-
-
   }
 }

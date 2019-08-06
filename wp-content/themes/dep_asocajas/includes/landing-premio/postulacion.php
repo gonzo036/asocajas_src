@@ -15,41 +15,66 @@
 	?>
   <section id="postulacion">
     <div class="postulacion">
-      <div class="postulacion-requisitos">
-        <div class="icono-header">
-          <img src="" alt="">
-        </div>
-        <h3>REQUISITOS DE POSTULACIÓN</h3>
-        <div class="requisitos">
-          <div class="infografia">
-						<img src="<?php echo $requisitos_infografia; ?>" alt="">
-						<?php echo $info_requisitos; ?>
+
+      <div class="postulacion__wrapper">
+        
+        <div class="postulacion__wrapper-side postulacion-requisitos">
+
+          <header class="postulacion__header requisitos">
+            <span>
+              <div class="icono-header">
+                <img src="<?php bloginfo('template_url')?>/img/icono-requisitos.png" alt="">
+              </div>
+              <h3>REQUISITOS DE POSTULACIÓN</h3>
+            </span>
+          </header>
+
+          <div class="requisitos">
+            <div class="infografia">
+              <div class="requisitos__side">
+                <img src="<?php echo $requisitos_infografia; ?>" alt="">
+              </div>
+              <div class="requisitos__side">
+                <?php echo $info_requisitos; ?>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
 
-      <div class="postulacion-proceso">
-        <div class="icono-header">
-          <img src="" alt="">
-        </div>
-        <h3>PROCESO DE POSTULACIÓN</h3>
-        <?php if($proceso_postulacion): ?>
+        <div class="postulacion__wrapper-side postulacion-proceso">
+          
+          <header class="postulacion__header proceso">
+            <span>
+              <div class="icono-header">
+                <img src="<?php bloginfo('template_url')?>/img/icono-postulacion.png" alt="">
+              </div>
+              <h3>PROCESO DE POSTULACIÓN</h3>
+            </span>
+          </header>
+          
+          <?php if($proceso_postulacion): ?>
 
+          <?php
+
+            while(have_rows('proceso_postulacion')): the_row();
+              $icono = get_sub_field('icono');
+              $informacion = get_sub_field('informacion');
+
+          ?>
+          <div class="postulacion-item">
+            <figure class="postulacion-item__thumb">
+              <img src="<?php echo $icono; ?>" alt="">
+            </figure>
+            <div class="postulacion-item__text">
+              <p><?php echo $informacion; ?></p>
+            </div>
+          </div>
         <?php
-
-          while(have_rows('proceso_postulacion')): the_row();
-            $icono = get_sub_field('icono');
-            $informacion = get_sub_field('informacion');
-
-        ?>
-        <div class="postulacion-item">
-          <img src="<?php echo $icono; ?>" alt="">
-          <p><?php echo $informacion; ?></p>
+      endwhile;
+      endif; ?>
         </div>
-      <?php
-		endwhile;
-		endif; ?>
+
       </div>
     </div>
 

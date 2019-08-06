@@ -14,11 +14,13 @@
 <?php if($jurados): ?>
 <section id="jurados">
 	<div class="jurados" >
-		<div class="icono-header">
-			<img src="" alt="">
-		</div>
-		<header>
-			<h3>CONOCE A NUESTROS JURADOS</h3>
+		<header class="jurados__header container">
+			<span>
+				<div class="icono-header">
+					<img src="<?php bloginfo('template_url')?>/img/icono-jurados.png" alt="">
+				</div>
+				<h3>CONOCE A NUESTROS JURADOS</h3>
+			</span>
 		</header>
 		<div class="event-ponents container">
 			<?php while(have_rows('jurados')): the_row();

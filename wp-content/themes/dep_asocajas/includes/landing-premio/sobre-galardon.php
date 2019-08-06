@@ -21,7 +21,7 @@
 			</div>
 			<div class="galardon--text">
 				<div class="icono-header">
-					<img src="" alt="">
+					<img src="<?php bloginfo('template_url')?>/img/icono4.png" alt="icono">
 				</div>
 				<div class="">
 						<?php echo $info_galardon; ?>
