@@ -7,12 +7,14 @@
     display: flex;
 
   }
-  &--info {
+  &--contentLeft {
     display: block;
     text-align: center;
+    padding: rem(20px);
     @include mq('md') {
       text-align: left;
       width: 50%;
+
 
     }
 
@@ -49,6 +51,7 @@
         text-align: center;
         color: $white;
         text-transform: uppercase;
+        font-weight: bold;
       }
     }
   }

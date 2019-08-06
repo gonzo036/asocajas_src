@@ -19,7 +19,7 @@
 			</div>
 			<div class="fabio--text">
 				<div class="icono-header">
-					<img src="" alt="">
+					<img src="<?php bloginfo('template_url')?>/img/icono1.png" alt="icono">
 				</div>
 				<div class="">
 						<?php echo $info_por_que; ?>

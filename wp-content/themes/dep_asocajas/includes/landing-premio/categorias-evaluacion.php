@@ -14,8 +14,8 @@
 	?>
   <section id="categorias">
     <div class="categorias">
-			
-		<header class="categorias__header container">
+
+		<header class="categorias__header ">
 			<span>
 				<div class="icono-header">
 					<img src="<?php bloginfo('template_url')?>/img/icono-criteriosevaluacion.png" alt="">
@@ -23,7 +23,7 @@
 				<h3>CATEGORÍAS DE EVALUACIÓN</h3>
 			</span>
 		</header>
-		<div class="categorias__wrapper container">
+		<div class="categorias__wrapper ">
 			<ul class="nav nav-pills categorias__wrapper-pills">
 				<?php
 				 $cont=0;
@@ -70,7 +70,7 @@
 	 			 </div>
 	 			 <?php else: ?>
 	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade">
-					<div class="categorias__wrapper-tabs__item categoria-item">						
+					<div class="categorias__wrapper-tabs__item categoria-item">
 						<div class="categoria-infografia">
 							<figure>
 								<img src="<?php echo $infografia; ?>" alt="">
@@ -78,7 +78,7 @@
 						</div>
 						<div class="categoria-info">
 							<?php echo $descripcion; ?>
-						</div>						
+						</div>
 					</div>
 	 			 </div>
 	 			 <?php
@@ -91,6 +91,6 @@
 	 		</div>
 
 		</div>
-		
+
     </div>
   </section>

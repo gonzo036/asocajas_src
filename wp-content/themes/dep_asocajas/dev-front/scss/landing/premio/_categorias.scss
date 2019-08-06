@@ -1,15 +1,21 @@
 .categorias {
-	padding: rem(20px) 0;
+
 	@include mq('md') {
-		padding: rem(90px) 0 rem(100px);
+		padding: rem(30px) rem(100px);
 	}
 	// Header
 	&__header {
-		text-align: left;
-		> span {
+		text-align: center;
+		@include mq('md') {
 			text-align: left;
+		}
+		> span {
+			text-align: center;
 			display: inline-block;
 			color: $lp-purple;
+			@include mq('md') {
+				text-align: left;
+			}
 			img {
 				display: inline-block;
 			}
@@ -18,7 +24,7 @@
 
 	// Wrapper tabs
 	&__wrapper {
-		
+
 		// Navigation
 		&-pills {
 			display: flex;
@@ -70,7 +76,7 @@
 				}
 			}
 		}
-		
+
 		// Wrapper tabs
 		&-tabs {
 			&__item {
@@ -101,9 +107,12 @@
 					}
 				}
 				.categoria-info {
+					padding: rem(15px) rem(22px);
 					p, ul {
 						color: $white;
 					}
+
+
 				}
 			}
 		}

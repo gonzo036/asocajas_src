@@ -10,7 +10,7 @@
 		},
 
 		// scripts for Menu
-		menuScripts: function() { 
+		menuScripts: function() {
 			$(window).scroll(function() {
 
 				let scroll    = $(window).scrollTop();
@@ -33,8 +33,8 @@
 			.click(function(event) {
 			// On-page links
 			if (
-			  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-			  && 
+			  location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+			  &&
 			  location.hostname == this.hostname
 			) {
 			  // Figure out element to scroll to
@@ -126,7 +126,7 @@
 				slidesToShow: 3,
 				infinite: false,
 				slidesToScroll: 3,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -156,7 +156,7 @@
 				infinite: false,
 				slidesToScroll: 6,
 				accessibility: false,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -199,7 +199,7 @@
 		homeCounter: function() {
 
 			let numberItems = $('.numbers--item');
-			
+
 
 			$('.counter').counterUp({
 			    delay: 10,
@@ -235,7 +235,7 @@
 				slidesToShow: 3,
 				infinite: false,
 				slidesToScroll: 3,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -260,7 +260,7 @@
 				slidesToShow: 4,
 				infinite: false,
 				slidesToScroll: 4,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -381,7 +381,7 @@
 				slidesToShow: 3,
 				infinite: false,
 				slidesToScroll: 3,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -406,7 +406,7 @@
 				slidesToShow: 4,
 				infinite: false,
 				slidesToScroll: 4,
-				responsive: [				
+				responsive: [
 					{
 						breakpoint: 680,
 						settings: {
@@ -438,9 +438,9 @@
 					dots: false,
 					arrows: true,
 					slidesToShow: 4,
-					slidesToScroll: 4,					
+					slidesToScroll: 4,
 					accessibility: false,
-					responsive: [				
+					responsive: [
 						{
 							breakpoint: 680,
 							settings: {
@@ -458,7 +458,7 @@
 		}
 	}
 
-	// Trigger 
+	// Trigger
 	$GeneralScope.init();
 
 	// Home Scripts
@@ -487,6 +487,10 @@
 	}
 
 	if($('body').hasClass('page-template-templates_congreso-tpl-php')) {
+		$eventScope.init();
+		$congressScope.init();
+	}
+	if($('body').hasClass('page-template-templates_premio-tpl-php')) {
 		$eventScope.init();
 		$congressScope.init();
 	}

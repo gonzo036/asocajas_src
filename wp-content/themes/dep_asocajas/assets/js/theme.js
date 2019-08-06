@@ -539,6 +539,10 @@
 		$eventScope.init();
 		$congressScope.init();
 	}
+	if ($('body').hasClass('page-template-templates_premio-tpl-php')) {
+		$eventScope.init();
+		$congressScope.init();
+	}
 })(jQuery);
 
 /***/ }),

@@ -12,7 +12,7 @@
 	?>
   <section id="cronograma">
     <div class="cronograma">
-      <header class="cronograma__header container">
+      <header class="cronograma__header">
         <span>
           <div class="icono-header">
             <img src="<?php bloginfo('template_url')?>/img/icono-cronograma.png" alt="cronograma">

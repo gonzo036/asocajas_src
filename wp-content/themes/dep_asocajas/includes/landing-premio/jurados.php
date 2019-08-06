@@ -14,7 +14,7 @@
 <?php if($jurados): ?>
 <section id="jurados">
 	<div class="jurados" >
-		<header class="jurados__header container">
+		<header class="jurados__header ">
 			<span>
 				<div class="icono-header">
 					<img src="<?php bloginfo('template_url')?>/img/icono-jurados.png" alt="">
@@ -22,7 +22,7 @@
 				<h3>CONOCE A NUESTROS JURADOS</h3>
 			</span>
 		</header>
-		<div class="event-ponents container">
+		<div class="event-ponents ">
 			<?php while(have_rows('jurados')): the_row();
 				$foto = get_sub_field('foto');
 				$nombre= get_sub_field('nombre');
@@ -41,7 +41,9 @@
 					<?php if($cargo): ?>
 						<h5><?php echo $cargo; ?></h5>
 					<?php endif; ?>
+					<div class="event-ponents-item-caption">
 
+					</div>
 				</article>
 			<?php endwhile;?>
 		</div>

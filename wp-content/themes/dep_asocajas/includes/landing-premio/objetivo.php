@@ -13,12 +13,15 @@
 	?>
   <section id="objetivo">
     <div class="objetivo">
-			<div class="icono-header">
-				<img src="" alt="">
+			<div class="objetivo--contentLeft">
+				<div class="icono-header">
+					<img src="<?php bloginfo('template_url')?>/img/icono2.png" alt="icono">
+				</div>
+				<div class="objetivo--info">
+					<?php echo $objetivo; ?>
+				</div>
 			</div>
-      <div class="objetivo--info">
-        <?php echo $objetivo; ?>
-      </div>
+
       <div class="objetivo--iconos iconos">
         <?php if($iconos_objetivo): ?>
 

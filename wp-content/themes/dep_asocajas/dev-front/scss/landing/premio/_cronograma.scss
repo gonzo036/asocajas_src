@@ -1,23 +1,29 @@
 .cronograma {
   padding: rem(25px);
   @include mq('md') {
-		padding: rem(38px);
+		padding: rem(30px) rem(100px);
 	}
 
   // Header
   &__header {
     padding-top: rem(32px);
-    text-align: left;
-    > span {
+    text-align: center;
+    @include mq('md') {
       text-align: left;
+    }
+    > span {
+      text-align: center;
       display: inline-block;
       color: $lp-azul2;
+      @include mq('md') {
+        text-align: left;
+      }
       img {
         display: inline-block;
       }
     }
   }
-  
+
   // Wrapper items
 
   .fechas {

@@ -9,6 +9,7 @@
   &--text {
     display: block;
     text-align: center;
+    padding: rem(15px) rem(22px);
     @include mq('md') {
       text-align: left;
       width: 50%;

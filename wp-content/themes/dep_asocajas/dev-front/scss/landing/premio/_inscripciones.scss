@@ -4,9 +4,10 @@
 	background-position: bottom right;
 	@include mq('md') {
 		min-height: rem(650px);
-		padding: rem(92px) 0; 
+		padding: rem(30px) rem(100px);
 	}
 	.inscripciones {
+		padding: rem(25px);
 		&__header {
 			text-align: left;
 			> span {
@@ -35,7 +36,7 @@
 						padding: rem(12px) rem(60px);
 						text-align: center;
 						font-family: $bd;
-						color: $white; 
+						color: $white;
 						background-color: $lp-purple;
 					}
 				}
