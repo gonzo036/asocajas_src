@@ -39,38 +39,60 @@
 					padding: rem(12px);
 					font-family: $bd;
 					@include font(17px);
-					&:hover,
-					&:focus,
-					&:active {
-						background-color: $lp-purple;
-						color: $white;
-					}
+
 				}
 
 				&:nth-child(1) {
 					a {
 						color: $lp-purple;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $lp-purple;
+							color: $white;
+						}
 					}
+
+
 				}
 				&:nth-child(2) {
 					a {
 						color: $lp-green;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $lp-green;
+							color: $white;
+						}
 					}
 				}
 				&:nth-child(3) {
 					a {
 						color: $lp-red;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $lp-red;
+							color: $white;
+						}
 					}
 				}
 				&:nth-child(4) {
 					a {
 						color: $lp-dkblue;
+						&:hover,
+						&:focus,
+						&:active {
+							background-color: $lp-dkblue;
+							color: $white;
+						}
+
 					}
 				}
 
 				&.active {
 					a {
-						background-color: $lp-purple;
+						background-color: $lp-gray;
 						color: $white;
 					}
 				}
@@ -79,10 +101,24 @@
 
 		// Wrapper tabs
 		&-tabs {
+
 			&__item {
-				background-color: $lp-purple;
+				//background-color: $lp-purple;
 				color: $white;
 				padding: rem(32px) 0;
+
+				&.SOCIAL{
+					background-color: $lp-purple;
+				}
+				&.LABORAL{
+					background-color: $lp-green;
+				}
+				&.DISRUPCIÓN{
+					background-color: $lp-red;
+				}
+				&.COMPROMISO{
+					background-color: $lp-dkblue;
+				}
 
 				@include mq('md') {
 					padding: rem(52px) rem(32px);

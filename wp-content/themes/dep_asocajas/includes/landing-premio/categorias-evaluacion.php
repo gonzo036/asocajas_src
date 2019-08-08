@@ -33,7 +33,7 @@
 				?>
 				<?php if ($cont==1): ?>
 
-				 <li class="active"><a data-toggle="pill" href="#menu<?php echo $cont ?> "><?php the_sub_field('titulo_categoria'); ?></a></li>
+				 <li class="active <?php the_sub_field('titulo_categoria'); ?>"><a data-toggle="pill" href="#menu<?php echo $cont ?> "><?php the_sub_field('titulo_categoria'); ?></a></li>
 
 			 <?php else: ?>
 				<li><a data-toggle="pill" href="#menu<?php echo $cont; ?>"><?php the_sub_field('titulo_categoria'); ?></a></li>
@@ -56,8 +56,8 @@
 					$cont++;
 				?>
 	 			 <?php if ($cont==1): ?>
-	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade <?php echo $active; ?>">
-					 <div class="categorias__wrapper-tabs__item categoria-item">
+	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade  <?php echo $active; ?>">
+					 <div class="categorias__wrapper-tabs__item categoria-item <?php the_sub_field('titulo_categoria'); ?>">
 						 <div class="categoria-infografia">
 							 <figure>
 									<img src="<?php echo $infografia; ?>" alt="">
@@ -69,8 +69,8 @@
 					 </div>
 	 			 </div>
 	 			 <?php else: ?>
-	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade">
-					<div class="categorias__wrapper-tabs__item categoria-item">
+	 			 <div id="menu<?php echo $cont;  ?>" class="tab-pane fade ">
+					<div class="categorias__wrapper-tabs__item categoria-item <?php the_sub_field('titulo_categoria'); ?>">
 						<div class="categoria-infografia">
 							<figure>
 								<img src="<?php echo $infografia; ?>" alt="">

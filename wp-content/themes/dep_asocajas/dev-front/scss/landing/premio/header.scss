@@ -1,6 +1,7 @@
 body {
-  background-image: url('../images/bgs/bg-cuadros.png');
+
 	&.page-template-templates_premio-tpl-php {
+      background-image: url('../images/bgs/bg-cuadros.png');
 		nav {
 			&.navbar {
 				background-color: $lp-green;

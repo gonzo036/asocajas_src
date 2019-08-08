@@ -9,12 +9,15 @@
         <p>Bogotá Colombia</p>
       </div>
       <div class="congreso-footer__wrapper-item">
-        <p>comunicaciones@asocajas.org.co</p>
+        <p>premio@asocajas.org.co</p>
       </div>
       <div class="congreso-footer__wrapper-item">
         <p>(57 1) 3232765</p>
       </div>
     </div>
+  </div>
+  <div class="button-fix navbar-fixed-bottom">
+    <a href="/premio/#inscripciones">inscripciones</a>
   </div>
 </section>
 <?php wp_footer(); ?>
