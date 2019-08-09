@@ -26,7 +26,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
+      <a class="" href="<?php echo home_url('/'); ?>"> <img src="https://www.asocajas.org.co/wp-content/themes/dep_asocajas/assets/css/38fb260e474262f5079062c729278d0b.png" alt="" width="150px" height="auto"> </a>
     </div>
     <div class="collapse navbar-collapse" id="navbar">
       <?php

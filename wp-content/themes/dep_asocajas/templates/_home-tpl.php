@@ -16,7 +16,7 @@
 		get_template_part('includes/home/event');
 
 		/*Premio*/
-		//get_template_part('includes/home/premio');
+		get_template_part('includes/home/premio');
 
 		/*revistas*/
 		get_template_part('includes/home/revista');
