@@ -20,12 +20,21 @@
       text-transform: uppercase;
       color: $lp-azul2;
     }
+    a{
+      display: inline-block;
+      padding: 1.2rem 6rem;
+      text-align: center;
+      font-family: Rubik Bold;
+      color: $white;
+      background-color: $lp-azul2;
+    }
   }
   &--imagen {
     display: block;
     text-align: center;
     @include mq('md') {
       width: 50%;
+      text-align: center;
 
     }
     img {
