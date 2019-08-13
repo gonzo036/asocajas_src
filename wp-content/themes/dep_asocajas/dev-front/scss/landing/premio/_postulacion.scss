@@ -3,7 +3,7 @@
 	&__header {
 		padding: rem(12px) 0;
 		text-align: left;
-		
+
 		h3 {
 			margin-top: 0;
 		}
@@ -31,7 +31,7 @@
 	&-requisitos {
 
 		@include background-gradient($lp-pink-1, $lp-pink-2, 'horizontal');
-		
+
 		.infografia {
 			display: flex;
 			flex-wrap: wrap;
@@ -42,7 +42,7 @@
 		}
 
 		img {
-			max-width: 100%;			
+			max-width: 100%;
 			height: auto;
 		}
 		ul {
@@ -56,7 +56,7 @@
 			}
 		}
 	}
-	
+
 	//Procesos
 	&-proceso {
 		.postulacion-item {
@@ -67,10 +67,12 @@
 				img {
 					display: inline-block;
 					max-width: 100%;
+					
 				}
 			}
 			&__text {
 				width: 65%;
+				padding: rem(66px) rem(15px);
 			}
 		}
 	}

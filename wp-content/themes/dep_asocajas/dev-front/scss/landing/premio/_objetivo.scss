@@ -27,14 +27,16 @@
     }
   }
   .iconos {
-    display: flex;
+    display: block;
     padding: rem(20px);
     @include mq('md') {
       width: 50%;
+      display: flex;
 
     }
     &--item{
       display: block;
+      text-align: center;
       margin: rem(20px) auto;
       @include mq('md') {
         display: inline-block;
@@ -46,6 +48,7 @@
       img {
         max-width: 100%;
         display: inline-block;
+
       }
       p{
         text-align: center;
