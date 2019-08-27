@@ -487,6 +487,7 @@
 			if (eventWrapper.length > 0) {
 				var slick_settings = {
 					dots: false,
+					autoplay: true,
 					arrows: true,
 					slidesToShow: 4,
 					slidesToScroll: 4,
