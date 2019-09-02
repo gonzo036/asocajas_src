@@ -11,7 +11,7 @@ url_destino
 	$url_destino_fec = get_field('url_destino_fec');
 
 
-	if($imagen_banner):
+	if($imagen_banner_fec):
 
 	?>
 
