@@ -17,9 +17,9 @@
 
 	// Networks menu
 	.menu-menu-redes-container {
+		text-align: center;
 		@include mq('sm') {
 			width: auto;
-			position: absolute;
 			right: rem(-23px);
 			top: (7px);
 		}
