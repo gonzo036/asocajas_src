@@ -7,8 +7,15 @@
 		padding: rem(20px) 0;
 	}
 
+	> .container-fluid, 
 	> .container {
 		position: relative;
+		@include mq('sm') {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 rem(35px);
+		}
 	}
 
 	// Scrolled menu styles
