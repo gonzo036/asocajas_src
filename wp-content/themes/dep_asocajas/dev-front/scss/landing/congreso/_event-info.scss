@@ -4,11 +4,11 @@ body {
 		.event-info {
 			padding: rem(12px) 0 rem(30px);
 			background-color: $l-purple;
-		
+
 			@include mq('md') {
 				margin-top: 50px;
 			}
-		
+
 			&-wrapper {
 				display: block;
 				position: relative;
@@ -18,7 +18,7 @@ body {
 					align-items: center;
 					justify-content: center;
 				}
-		
+
 				// Pattern wave
 				&::before {
 					content: "";
@@ -30,7 +30,7 @@ body {
 					top: rem(-30px);
 					left: 0;
 				}
-		
+
 				&__date,
 				&__place {
 					position: relative;
@@ -43,20 +43,20 @@ body {
 					&::before {
 						content:"";
 						width: rem(45px);
-						height: rem(45px);				
+						height: rem(45px);
 						@include center('vertical');
 						left: 0;
 					}
-		
+
 					a {
 						color: $white;
 					}
-		
+
 					h3 {
 						@include font(22px);
 					}
 				 }
-		
+
 				&__date {
 					&:before {
 						@include iconBg('../images/icons/gradient-calendar.svg');
@@ -68,18 +68,18 @@ body {
 					}
 				}
 			}
-		
+
 			&-cta {
 				text-align: center;
 				padding: rem(16px) 0 rem(32px);
 				a {
-					
+
 					h3 {
 						margin: 0 0;
 						@include outlineBtn(rem(14px), $white ,$l-pink2);
-						background-color: transparent;
+						background-color: $l-pink;
 						&:hover {
-							background-color: $l-pink;
+							background-color: $l-blue;
 						}
 					}
 				}
