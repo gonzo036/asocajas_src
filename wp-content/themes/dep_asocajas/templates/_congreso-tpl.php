@@ -19,7 +19,7 @@ get_template_part('includes/landing-congreso/logistica');
 
 get_template_part('includes/landing-congreso/patrocinadores');
 
-get_template_part('includes/landing-congreso/memorias');
+//get_template_part('includes/landing-congreso/memorias');
 
 get_template_part('includes/landing-congreso/seccion-final');
 
