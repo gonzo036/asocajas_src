@@ -27,7 +27,7 @@
 		width: rem(44px);
 		height: rem(44px);
 		z-index: 2;
-		&.slick-prev {			
+		&.slick-prev {
 			left: rem(10px);
 			@include iconBg('../images/icons/left-arrow.svg', 44px);
 		}
@@ -69,7 +69,7 @@
 		}
 	}
 
-	&--caption {		
+	&--caption {
 		padding: rem(17px);
 		text-align: left;
 		h3 {
@@ -98,7 +98,7 @@
 	}
 
 	// OVERLAY
-	
+
 	&--overlay {
 		opacity: 0;
 		padding: 0 rem(20px);
@@ -132,7 +132,7 @@
 					}
 				}
 
-				.more-icon {					
+				.more-icon {
 					width: rem(35px);
 					height: rem(35px);
 					margin: rem(20px) auto 0;
@@ -140,6 +140,11 @@
 					display: block;
 				}
 			}
+		}
+	}
+	.boton-mas{
+		a{
+			position: initial;
 		}
 	}
 }

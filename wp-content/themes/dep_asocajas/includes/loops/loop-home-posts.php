@@ -14,7 +14,7 @@
 			<h2>Noticias</h2>
 		</header>
 		<div class="home-news--wrapper">
-			<?php 
+			<?php
 				$args = array( 'post_type' => 'post', 'posts_per_page' => 10 );
 				$query = new WP_Query( $args );
 				while ( $query->have_posts() ) : $query->the_post();
@@ -51,7 +51,7 @@
 						<h3>
 							<a href="<?php the_permalink(); ?>">
 								<?php the_title(); ?>
-							</a>				
+							</a>
 						</h3>
 						<h4>
 							<?php the_time('F j, Y'); ?>
@@ -62,6 +62,9 @@
 				endwhile;
 				wp_reset_query();
 			?>
+		</div>
+		<div class="boton-mas text-center">
+			<a class="home-event--link" href="https://www.asocajas.org.co/sala-de-prensa/">VER MÁS NOTICIAS</a>
 		</div>
 	</div>
 </section>
