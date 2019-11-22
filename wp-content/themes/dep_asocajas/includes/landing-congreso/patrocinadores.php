@@ -31,16 +31,3 @@
 
 
 </section>
-<section>
-	<div class="memorias text-center">
-		<div class="patrocinadores-header">
-			<header>
-				<h2>MEMORIAS</h2>
-			</header>
-
-		</div>
-		<div class="event-info-cta">
-			<a href="http://asocajas.org.co/sitio2018congreso/#memorias"> <h3>VER MEMORIAS</h3> </a>
-		</div>
-	</div>
-</section>

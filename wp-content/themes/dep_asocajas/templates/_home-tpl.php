@@ -13,10 +13,10 @@
 		get_template_part('includes/loops/loop','home-posts');
 
 		/*Event*/
-		get_template_part('includes/home/event');
+		get_template_part('includes/home/premio');
 
 		/*Premio*/
-		get_template_part('includes/home/premio');
+		get_template_part('includes/home/event');
 
 		/*revistas*/
 		get_template_part('includes/home/revista');
