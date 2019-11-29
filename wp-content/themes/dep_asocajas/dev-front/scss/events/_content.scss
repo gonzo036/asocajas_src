@@ -1,3 +1,10 @@
+.destacado{
+	header{
+		h2{
+			color:$morado;
+		}
+	}
+}
 .event {
 	&-wrapper {
 		@include mq('md') {
@@ -33,7 +40,7 @@
 				text-align: center;
 				&::after {
 					content: "";
-					@include background-gradient($green, $aqua, 'horizontal');					
+					@include background-gradient($morado, $fucsia, 'horizontal');
 					display: block;
 					position: absolute;
 					width: 100%;
@@ -44,7 +51,7 @@
 			}
 			@include mq('md') {
 				padding: rem(30px);
-				width: 35%;
+				width: 65%;
 			}
 
 			table {

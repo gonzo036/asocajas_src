@@ -22,16 +22,3 @@ section {
 		}
 	}
 }
-
-.prefooter {
-	background-color: $azul;
-	padding: rem(25px);
-	@include mq('md') {
-		padding: rem(225px) 0 rem(20px);
-		background-color: transparent;
-		background-position: top center;
-		background-image: url('../images/bgs/bg-waves.jpg');
-		background-size: 100%;
-		background-repeat: no-repeat;
-	}
-}

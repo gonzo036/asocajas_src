@@ -423,6 +423,69 @@
 		},
 	}
 
+
+	const $MemoriasScope = {
+
+		// Constructor
+		init: function() {
+			// Instance functions
+			this.videoSlider();
+			this.gallerySlider();
+		},
+
+		// Scripts Video
+		videoSlider: function() {
+			let slider_wrapper = $('.video-news--wrapper');
+			let slick_settings = {
+				dots: false,
+				arrows: true,
+				slidesToShow: 3,
+				infinite: false,
+				slidesToScroll: 3,
+				responsive: [
+					{
+						breakpoint: 680,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			}
+
+			if(!slider_wrapper.hasClass('slick-initialized')) {
+				const slick_slider = slider_wrapper.slick(slick_settings);
+			}
+		},
+
+		// Scripts Gallery
+		gallerySlider: function() {
+			let slider_wrapper = $('.gallery-memorias--wrapper');
+			let slick_settings = {
+				dots: false,
+				arrows: true,
+				slidesToShow: 4,
+				infinite: false,
+				slidesToScroll: 4,
+				responsive: [
+					{
+						breakpoint: 680,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			}
+
+			if(!slider_wrapper.hasClass('slick-initialized')) {
+				const slick_slider = slider_wrapper.slick(slick_settings);
+			}
+		},
+	}
+
+
+
 	// -- Event Congress -- //
 	const $congressScope = {
 		// Constructor
@@ -485,6 +548,9 @@
 	// Landing Scripts
 	if($('body').hasClass('page-template-templates_landing-tpl-php')) {
 		$LandingScope.init();
+	}
+	if($('body').hasClass('page-template-templates_memorias-tpl-php')) {
+		$MemoriasScope.init();
 	}
 
 	if($('body').hasClass('page-template-templates_congreso-tpl-php')) {

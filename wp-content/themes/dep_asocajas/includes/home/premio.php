@@ -17,7 +17,7 @@ url_destino
 
 <div class="text-center">
       <header>
-      <h2>PREMIO</h2>
+      <h2>MEMORIAS CONGRESO 2019</h2>
     </header>
 </div>
 <section id="homeEvent" class="home-event">
