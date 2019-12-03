@@ -11,11 +11,11 @@
 <section id="VideoPost">
 	<div class="container video-news">
 		<header>
-			<h2>Videos día 1</h2>
+			<h2>Videos día 2</h2>
 		</header>
 		<div class="video-news--wrapper">
 			<?php
-				$args = array( 'post_type' => 'videos','category_name' => 'congreso2019', 'posts_per_page' => -1 );
+				$args = array( 'post_type' => 'videos','category_name' => 'congreso20192', 'posts_per_page' => -1 );
 				$query = new WP_Query( $args );
 				while ( $query->have_posts() ) : $query->the_post();
 					$yt_id = get_field('youtube_id');

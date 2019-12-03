@@ -9,6 +9,8 @@ get_template_part('includes/memorias/video');
 
 get_template_part('includes/loops/loop','videos-congreso2019');
 
+get_template_part('includes/loops/loop','videos-congreso20192');
+
 get_template_part('includes/memorias/galeria');
 
 get_template_part('includes/memorias/memorias');
