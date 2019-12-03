@@ -9,6 +9,10 @@
 // Videos feed posts
 body {
 	&.page-template-_landing-tpl {
+		#cifras-animadas {
+				background-image: url('../images/bgs/bg-waves.jpg');
+			}
+
 		.video-news {
 			header {
 				text-align: center;

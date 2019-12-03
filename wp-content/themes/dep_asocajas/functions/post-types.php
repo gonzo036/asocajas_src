@@ -45,6 +45,7 @@ function create_posttype() {
 	        'rewrite' => array('slug' => 'video'),
 	        'supports' => array( 'title', 'thumbnail', 'custom-fields'),
 	        'public' => true,
+					'taxonomies'          => array( 'category', 'post_tag' ),
 	        'hierarchical'        => false,
 	        'show_ui'             => true,
 	        'show_in_menu'        => true,
@@ -174,7 +175,7 @@ function create_posttype() {
 	    'singular_name' => _x( 'Tipo', 'tipo' ),
 	    'search_items' =>  __( 'Buscar Tipo de recurso' ),
 	    'all_items' => __( 'Todas los tipo de recurso' )
-	); 
+	);
 
 	register_taxonomy('tipo-recurso',array('recursos'), array(
 	    'hierarchical' => true,
@@ -186,7 +187,7 @@ function create_posttype() {
 	    'rest_controller_class' => 'WP_REST_Terms_Controller',
 	    'query_var' => true,
 	    'rewrite' => array( 'slug' => 'tipo-recurso')
-	)); 
+	));
 
 	flush_rewrite_rules();
 }

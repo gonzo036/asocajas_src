@@ -1,5 +1,6 @@
 section {
 	&#cifras-animadas {
+		background-image: url('../images/bgs/bg-waves.jpg');
 		@include mq('md') {
 			padding: 0 rem(38px) rem(38px);
 		}

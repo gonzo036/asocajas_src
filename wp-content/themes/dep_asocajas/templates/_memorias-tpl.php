@@ -7,7 +7,7 @@ get_template_part('includes/memorias/header');
 
 get_template_part('includes/memorias/video');
 
-get_template_part('includes/loops/loop','videos');
+get_template_part('includes/loops/loop','videos-congreso2019');
 
 get_template_part('includes/memorias/galeria');
 
