@@ -7,7 +7,7 @@
 		padding: rem(20px) 0;
 	}
 
-	> .container-fluid, 
+	> .container-fluid,
 	> .container {
 		position: relative;
 		@include mq('sm') {
@@ -43,7 +43,7 @@
 			float: none;
 		}
 		.navbar-brand {
-			@include iconBg('../images/brand/logo.svg', 186px);
+			@include iconBg('../images/brand/logo2.svg', 186px);
 			width: rem(186px);
 			height: rem(50px);
 		}

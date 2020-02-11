@@ -33,7 +33,9 @@
 				?>
 				<?php if ($cont==1): ?>
 
-				 <li class="active <?php the_sub_field('titulo_categoria'); ?>"><a data-toggle="pill" href="#menu<?php echo $cont ?> "><?php the_sub_field('titulo_categoria'); ?></a></li>
+				 <li class="active <?php the_sub_field('titulo_categoria'); ?>">
+					 <a data-toggle="pill" href="#menu<?php echo $cont ?> "><?php the_sub_field('titulo_categoria'); ?></a>
+				 </li>
 
 			 <?php else: ?>
 				<li><a data-toggle="pill" href="#menu<?php echo $cont; ?>"><?php the_sub_field('titulo_categoria'); ?></a></li>
