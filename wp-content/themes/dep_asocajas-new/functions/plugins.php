@@ -27,3 +27,21 @@ add_filter('acf/settings/dir', 'configure_folder_acf');
 
 // 4. Include ACF
 include_once( get_stylesheet_directory() . '/includes/acf/acf.php' );
+
+// Options page 
+
+add_action('acf/init', 'my_acf_init');
+
+function my_acf_init() {
+	
+	if( function_exists('acf_add_options_page') ) {
+		
+		$option_page = acf_add_options_page(array(
+			'page_title' 	=> 'Opciones de Mapa',
+			'menu_title'	=> 'Opciones de Locación',
+			'menu_slug' 	=> 'theme-map-settings',
+			'capability'	=> 'edit_posts',
+			'redirect'		=> false
+		));		
+	}	
+}
