@@ -2,6 +2,29 @@
 	position: relative;
 	//height: 83vh;
 	width: 100%;
+	margin: 0;
+	background-color: $gray-f6;
+
+	&#revista
+	{
+		background: none;
+		margin: 10px;
+	}
+
+	.link_home_orange
+	{
+		width: 195px;
+		height: 60px;
+		box-shadow: 0 0 5px #ccc;
+		border-radius: 5px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		line-height: 60px;
+		background: #e96773;
+		color: #fff;
+		font-size: 18px;
+	}
 	&--item {
 		//height: 83vh;
 		width: 100%;

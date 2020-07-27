@@ -3,7 +3,9 @@ body {
 	font-size: 16px;
 	margin-top: 0;
 	color: $gray;
-	background: red;
+	max-width: 1280px;
+	width: 100%;
+	margin: 0 auto;
 	strong,
 	b, h1, h2, h3 {
 		font-family: $bd;
@@ -39,32 +41,33 @@ body {
 		width: rem(32px);
 		height: rem(32px);
 		margin: 0 rem(5px);
+		margin-left: 20px;
 		a {
 			display: block;
-			width: rem(32px);
-			height: rem(32px);
+			width: rem(47px);
+			height: rem(47px);
 			&:hover {
 				opacity: 0.7;
 			}
 		}
 		&.facebook {
 			a {
-				@include iconBg('../images/icons/facebook.svg', 32px);
+				@include iconBg('../images/icons/facebook.svg', 47px);
 			}
 		}
 		&.twitter {
 			a {
-				@include iconBg('../images/icons/twitter.svg', 32px);
+				@include iconBg('../images/icons/twitter.svg', 47px);
 			}
 		}
 		&.youtube {
 			a {
-				@include iconBg('../images/icons/youtube.svg', 32px);
+				@include iconBg('../images/icons/youtube.svg', 47px);
 			}
 		}
 		&.instagram {
 			a {
-				@include iconBg('../images/icons/insta.svg', 32px);
+				@include iconBg('../images/icons/insta.svg', 47px);
 			}
 		}
 	}

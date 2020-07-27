@@ -2,7 +2,7 @@
 
  ?>
 
- <section id="informacion-giass">
+ <section id="informacion-giass" class="container-fluid">
    <div class="informacionGiass__wrapper">
      <div class="informacionGiass__wrapper-titulo">
        <?php the_field('titulo') ?>
