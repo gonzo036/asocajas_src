@@ -7,11 +7,11 @@
      <div class="informacionGiass__wrapper-titulo">
        <?php the_field('titulo') ?>
      </div>
-     <div class="informacionGiass__wrapper-controles">
+     <div class="informacionGiass__wrapper-controles row">
        <?php
         while(have_rows('items')): the_row();
         ?>
-         <div class="informacionGiass__wrapper-controles-item">
+         <div class="informacionGiass__wrapper-controles-item col-xs-12 col-md-4 col-lg-4">
            <img src="<?php the_sub_field('icono') ?>" alt="">
            <p><?php the_sub_field('info') ?></p>
          </div>
